@@ -1,0 +1,25 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+$BrushBeat-Black: #323232;
+$BrushBeat-DarkBlack: #000000;
+$BrushBeat-Blue: #0095FF;
+$BrushBeat-DarkBlue: #0065AD;
+$Silver: #AFAFAF;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;
+$White: #FFFFFF;
+
+
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

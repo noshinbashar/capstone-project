@@ -1,0 +1,87 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.comments {
+    padding: 5%;
+
+    @include tablet {
+        padding-top: 0%;
+        padding-bottom: 0%;
+
+    }
+
+    &__box {
+        padding-inline-start: 0%;
+        border-bottom: 1px solid $Mercury;
+
+        @include tablet {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+
+.list {
+    list-style-type: none;
+    border-top: 1px solid $Mercury;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 1.5;
+    position: relative;
+
+    @include tablet {
+        padding-left: 9%;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+
+    &__time {
+        position: absolute;
+        top: 0%;
+        right: 5%;
+        color: $Silver;
+
+        @include tablet {
+            right: 0%;
+        }
+    }
+
+    &__image {
+        //This represents profile image for each comment
+        width: 40px;
+        height: 40px;
+        background-color: $Mercury;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+}
+
+.comment-item {
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+        width: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        background-color: $BrushBeat-DarkBlue;
+        height: 25px;
+        width: 50px;
+        color: $White;
+        border: none;
+        border-radius: 3px;
+        font-weight: 600;
+
+    }
+}

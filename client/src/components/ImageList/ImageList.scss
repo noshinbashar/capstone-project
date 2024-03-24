@@ -1,0 +1,77 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.images {
+    padding: 5%;
+    padding-top: 0%;
+    margin-top: 0%;
+
+    @include tablet {
+        padding-top: 0%;
+    }
+
+    @include desktop {
+        padding-top: 10%;
+        border-left: 1px solid $Mercury;
+    }
+}
+
+.title {
+    // NEXT imageS (title of the image list)
+    font-size: 12px;
+    color: $Silver;
+    font-weight: 600;
+    padding-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+
+    @include tablet {
+        padding-top: 2%;
+    }
+
+}
+
+.imagelist {
+    padding-inline-start: 0%;
+    list-style-type: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    &__images {
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    &__info {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color: $BrushBeat-Black;
+        font-weight: 600;
+    }
+
+    &__channel {
+        font-size: 12px;
+        color: $BrushBeat-Black;
+    }
+}
+
+.link {
+    text-decoration: none;
+}

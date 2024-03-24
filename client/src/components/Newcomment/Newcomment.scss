@@ -1,0 +1,130 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+.container {
+    padding: 0% 5%;
+    position: relative;
+
+    @include tablet {}
+}
+
+.text {
+    // "3 Comments"
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.commentBox {
+    padding-left: 20%;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 5%;
+        margin-right: 10%;
+
+    }
+
+    &__text {
+        // "JOIN THE CONVERSATION"
+        font-size: 12px;
+        margin-bottom: 3%;
+        font-weight: 600;
+        color: $Silver;
+
+        @include desktop {
+            padding-left: 1%;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 100px;
+        border: 1px solid $Mercury;
+        background-color: $Alabaster;
+        border-radius: 5px;
+        margin-top: 0%;
+        position: relative;
+
+        @include tablet {
+            width: 420px;
+            height: 40px;
+        }
+
+        @include desktop {
+            width: 350px;
+            margin-left: 1%;
+        }
+
+        &--text {
+            // "Add a new comment"
+            border: transparent;
+            padding: 4%;
+            background-color: $Alabaster;
+            outline: none;
+            position: absolute;
+
+            &::placeholder {
+                color: $BrushBeat-DarkBlack;
+            }
+
+            @include tablet {
+                padding: 2%;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $BrushBeat-Blue;
+        margin-top: 14px;
+        border-radius: 5px;
+        position: relative;
+
+        @include tablet {
+            width: 200%;
+            margin-top: 40%;
+            margin-right: 20%;
+        }
+
+        @include desktop {
+            width: 170%;
+        }
+
+        &__text {
+            color: $White;
+            font-weight: 400;
+            border: transparent;
+            background-color: $BrushBeat-Blue;
+            padding: 12px;
+            font-family: 'AvenirNext LT Pro', sans-serif;
+            font-weight: 600;
+        }
+
+        &__image {
+            //This is the icon of comment button
+            position: absolute;
+            left: 5%;
+            top: 20%;
+        }
+    }
+
+    &__image {
+        //This is the profile image (Mohan-muruge.jpg)
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+
+        @include tablet {
+            top: 65px;
+            left: 40px;
+        }
+    }
+
+}

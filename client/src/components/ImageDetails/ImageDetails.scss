@@ -1,0 +1,81 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.imageName {
+    //This is selected image title
+    padding: 0% 5%;
+    font-family: 'AvenirNext LT Pro', sans-serif;
+    font-size: 12px;
+    margin: 0%;
+    color: $BrushBeat-Black;
+
+    @include tablet {
+        padding-top: 2%;
+    }
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    border-top: 1px solid $Mercury;
+    border-bottom: 1px solid $Mercury;
+    padding-right: 15%;
+
+    @include tablet {
+        padding: 0%;
+        margin: 0% 5%;
+        border-top: none;
+    }
+
+    &__item {
+        color: $Silver;
+        font-size: 13px;
+
+        @include tablet {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+
+            @include desktop {
+                width: 35%;
+            }
+        }
+
+        &__icons {
+            display: flex;
+
+            @include desktop {
+                padding: 0% 10%;
+            }
+        }
+
+        &--views {
+            padding-right: 7px;
+        }
+
+        &--likes {
+            padding-right: 7px;
+        }
+
+    }
+
+    &__channel {
+        font-size: 13px;
+        font-weight: 600;
+        color: $BrushBeat-DarkBlack;
+    }
+}
+
+
+.description {
+    padding: 0% 5%;
+    font-size: 13px;
+    line-height: 1.5;
+
+    @include tablet {
+        padding-bottom: 1%;
+    }
+}
