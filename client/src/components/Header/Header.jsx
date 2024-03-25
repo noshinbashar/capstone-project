@@ -3,7 +3,7 @@ import "./Header.scss";
 function Header() {
     return (
         <>
-            <p>This is Header component</p>
+            <p className="header">This is Header component</p>
 
         </>
     );

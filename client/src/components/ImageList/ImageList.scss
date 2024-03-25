@@ -18,20 +18,20 @@
     }
 }
 
-.title {
-    // NEXT imageS (title of the image list)
-    font-size: 12px;
-    color: $Silver;
-    font-weight: 600;
-    padding-left: 0%;
-    margin-top: 0%;
-    margin-bottom: 1%;
+// .title {
+//     // NEXT imageS (title of the image list)
+//     font-size: 12px;
+//     color: $Silver;
+//     font-weight: 600;
+//     padding-left: 0%;
+//     margin-top: 0%;
+//     margin-bottom: 1%;
 
-    @include tablet {
-        padding-top: 2%;
-    }
+//     @include tablet {
+//         padding-top: 2%;
+//     }
 
-}
+// }
 
 .imagelist {
     padding-inline-start: 0%;

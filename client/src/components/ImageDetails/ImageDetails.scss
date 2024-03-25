@@ -3,6 +3,40 @@
 @use "../../styles/partials/fonts" as *;
 
 
+
+.imagecontainer {
+    //This is the background of selected image
+    height: 200px;
+    width: 100%;
+    // background-color: $BrushBeat-DarkBlack;
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        height: 400px;
+    }
+
+    @include desktop {
+        height: 450px;
+    }
+
+    &__image {
+        //This is selected image
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include desktop {
+            width: 70%;
+        }
+    }
+
+}
+
 .imageName {
     //This is selected image title
     padding: 0% 5%;
