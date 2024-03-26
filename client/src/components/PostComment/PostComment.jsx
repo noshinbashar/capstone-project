@@ -34,10 +34,6 @@ function PostComment({ selectedImage, postComment }) {
 
                 </form>
 
-                <div className="newComment__comments">
-                    <p className="newComment__text">{selectedImage.comments?.length} Comments</p>
-                </div>
-
             </div>
         </>
     )

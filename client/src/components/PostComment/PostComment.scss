@@ -4,7 +4,6 @@
 
 .newComment {
     margin: 5%;
-    margin-top: 15%;
 
     &__input {
         display: flex;
@@ -14,7 +13,7 @@
     &__text-input {
         border: transparent;
         width: 90%;
-        height: 40px;
+        height: 35px;
         border-radius: 20px;
         padding: 5%;
         outline: none;
@@ -40,26 +39,16 @@
         color: $White;
         font-weight: 600;
         transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
         &:hover {
-            background-color: lighten($BrushBeat-Blue, 10%);
+            background-color: darken($BrushBeat-Blue, 10%);
         }
 
         &:active {
-            background-color: darken($BrushBeat-Blue, 10%);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: lighten($BrushBeat-Blue, 10%);
+            box-shadow: none;
         }
-    }
-
-
-    &__comments {
-        display: flex;
-        justify-content: start;
-    }
-
-    &__text {
-        color: $Silver;
-        font-size: 14px;
-        font-weight: 600;
     }
 }

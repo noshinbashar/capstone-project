@@ -5,6 +5,7 @@
 
 .comments {
     padding: 5%;
+    padding-top: 0%;
 
     @include tablet {
         padding-top: 0%;
@@ -14,7 +15,7 @@
 
     &__box {
         padding-inline-start: 0%;
-        border-bottom: 1px solid $Mercury;
+        border-bottom: 1px solid $White;
 
         @include tablet {
             padding-top: 2%;
@@ -26,7 +27,7 @@
 
 .list {
     list-style-type: none;
-    border-top: 1px solid $Mercury;
+    border-top: 1px solid $White;
     font-size: 13px;
     padding-left: 20%;
     line-height: 1.5;
@@ -55,7 +56,7 @@
         //This represents profile image for each comment
         width: 40px;
         height: 40px;
-        background-color: $Mercury;
+        background-color: $BrushBeat-Yellow;
         border-radius: 50%;
         position: absolute;
         top: 0%;
@@ -68,20 +69,27 @@
     display: flex;
     justify-content: space-between;
 
-    &__image {
-        width: 35px;
+    &__icon {
+        //This represents like icon for each comment
+        width: 30px;
         display: flex;
         justify-content: space-between;
     }
 
-    &__button {
-        background-color: $BrushBeat-DarkBlue;
-        height: 25px;
-        width: 50px;
-        color: $White;
-        border: none;
-        border-radius: 3px;
-        font-weight: 600;
+    &__like {
+        filter: invert(55%) sepia(55%) saturate(3856%) hue-rotate(326deg) brightness(102%) contrast(89%);
+    }
 
+    &__count {
+        color: $BrushBeat-Black;
+    }
+
+    &__button {
+        background-color: $White;
+        border: none;
+    }
+
+    &__dlt {
+        filter: invert(13%) sepia(34%) saturate(1927%) hue-rotate(197deg) brightness(101%) contrast(93%);
     }
 }

@@ -4,6 +4,8 @@
 
 .selectedImage {
     margin: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 
     &__title {
         color: $BrushBeat-Black;
@@ -43,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    padding: 0% 5%;
+    padding: 5%;
 
     &__item {
         width: 40px;

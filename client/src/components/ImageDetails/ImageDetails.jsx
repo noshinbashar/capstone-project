@@ -25,6 +25,10 @@ function ImageDetails({ selectedImage }) {
           <p>{selectedImage.medium}</p>
         </div>
 
+        <div className="selectedImage__container">
+          <img src={selectedImage.image} alt="Selected Image" className="selectedImage__image" />
+        </div>
+
         <div className="data">
 
           <div className="data__time">
@@ -35,10 +39,6 @@ function ImageDetails({ selectedImage }) {
             <p className="data__interaction"> <img className="data__icons" src={Likes} alt="Likes" /> {selectedImage.likes}</p>
           </div>
 
-        </div>
-
-        <div className="selectedImage__container">
-          <img src={selectedImage.image} alt="Selected Image" className="selectedImage__image" />
         </div>
 
       </div>

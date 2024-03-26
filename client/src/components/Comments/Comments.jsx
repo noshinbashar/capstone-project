@@ -1,5 +1,8 @@
 import "./Comments.scss"
 import Like from "../../assets/icons/likes.svg"
+import Delete from "./../../assets/icons/delete_outline-24px.svg"
+
+
 
 function Comments({ Comments, deleteComment }) {
 
@@ -36,19 +39,19 @@ function Comments({ Comments, deleteComment }) {
                                 <p className="list__comment">{item.comment}</p>
 
                                 <div className="comment-item">
-                                    <div className="comment-item__image">
-                                        <img src={Like} alt="Like" ></img>
-                                        <p>{item.likes}</p>
+                                    <div className="comment-item__icon">
+                                        <img className="comment-item__like" src={Like} alt="Like" ></img>
+                                        <p className="comment-item__count">{item.likes}</p>
                                     </div>
 
                                     <div>
                                         <button className="comment-item__button"
-                                            onClick={() => deleteComment(item.id)} >Delete</button>   {/* Delete button for comments */}
+                                            onClick={() => deleteComment(item.id)} > <img className="comment-item__dlt" src={Delete} alt="delete" /></button>
                                     </div>
                                 </div>
 
                                 <p className="list__time">{formatDate(item.timestamp)}</p>
-                                <p className="list__image"></p>     {/* This represents profile image for each comment */}
+                                <p className="list__image"></p>
 
                             </li>
                         );
