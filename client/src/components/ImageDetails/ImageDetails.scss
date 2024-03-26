@@ -53,10 +53,15 @@
 
     &__interaction {
         display: flex;
+        color: $BrushBeat-Black;
     }
 
     &__icons {
         padding-right: 5px;
         filter: invert(55%) sepia(55%) saturate(3856%) hue-rotate(326deg) brightness(102%) contrast(89%);
+    }
+
+    &__time {
+        color: $BrushBeat-Black;
     }
 }

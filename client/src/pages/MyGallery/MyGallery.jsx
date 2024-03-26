@@ -1,6 +1,6 @@
 import "./MyGallery.scss"
 import ImageDetails from "../../components/ImageDetails/ImageDetails";
-import NewComment from "../../components/Newcomment/Newcomment";
+import PostComment from "./../../components/PostComment/PostComment";
 import Comments from "../../components/Comments/Comments";
 import ImageList from "../../components/ImageList/ImageList";
 import { useState, useEffect } from "react";
@@ -71,7 +71,7 @@ function MyGallery() {
         <div className="mainpage">
           <div className="itemone">
             <ImageDetails selectedImage={selectedImage} />
-            <NewComment selectedImage={selectedImage} postComment={postComment} />
+            <PostComment selectedImage={selectedImage} postComment={postComment} />
             <Comments Comments={imageComments} deleteComment={deleteComment} />
           </div>
 

@@ -1,5 +1,5 @@
 import "./Comments.scss"
-import Like from "../../assets/Images/likes.svg"
+import Like from "../../assets/icons/likes.svg"
 
 function Comments({ Comments, deleteComment }) {
 

@@ -1,6 +1,5 @@
 import "./ImageDetails.scss";
-import Likes from "../../assets/Images/likes.svg"
-import Views from "../../assets/Images/views.svg"
+import Likes from "./../../assets/icons/likes.svg"
 
 function ImageDetails({ selectedImage }) {
   const formatDate = (timestamp) => {
