@@ -11,37 +11,38 @@ function ImageDetails({ selectedImage }) {
 
   return (
     <>
+
       <div className="selectedImage">
-        <div className="imageName">
-          <h1>{selectedImage.title}</h1>
+
+        <div className="selectedImage__title">
+          <p>{selectedImage.title}</p>
         </div>
 
-        <div className="description">
+        <div className="selectedImage__description">
           <p>{selectedImage.description}</p>
         </div>
 
-        <div className="imagecontainer">
-          <img src={selectedImage.image} alt="Selected Image" className="imagecontainer__image" />
+        <div className="selectedImage__medium">
+          <p>{selectedImage.medium}</p>
         </div>
 
         <div className="data">
 
-          <div className="data__item">
-            <p className="data__channel">{selectedImage.medium}</p>
-            <p className="data__date">{formatDate(selectedImage.timestamp)}</p>
+          <div className="data__time">
+            <p>{formatDate(selectedImage.timestamp)}</p>
           </div>
 
           <div className="data__item">
-            <p className="data__item__icons"> <img className="data__item--views" src={Views} alt="Views"></img> {selectedImage.views}</p>
-            <p className="data__item__icons"> <img className="data__item--likes" src={Likes} alt="Likes"></img> {selectedImage.likes}</p>
+            <p className="data__interaction"> <img className="data__icons" src={Likes} alt="Likes" /> {selectedImage.likes}</p>
           </div>
+
+        </div>
+
+        <div className="selectedImage__container">
+          <img src={selectedImage.image} alt="Selected Image" className="selectedImage__image" />
         </div>
 
       </div>
-
-
-
-
     </>
   )
 }
