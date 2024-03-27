@@ -1,6 +1,8 @@
 import Header from "./components/Header/Header";
-import MyGallery from "./pages/MyGallery/MyGallery";
-// import UploadPage from "./pages/UploadPage/UploadPage";
+import MyGalleryPage from "./pages/MyGalleryPage/MyGalleryPage";
+import AboutPage from "./pages/AboutPage/AboutPage"
+import GalleryPage from "./pages/GalleryPage/GalleryPage"
+import LogoPage from "./pages/LogoPage/LogoPage"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -12,9 +14,11 @@ function App() {
         <Header />
         <Routes>
 
-          <Route path="/" element={<MyGallery />} />
-          <Route path="/:id" element={<MyGallery />} />
-          {/* <Route path="/uploadpage" element={<UploadPage />} /> */}
+          <Route path="/" element={<LogoPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/mygallery" element={<MyGalleryPage />} />
+          <Route path="/:id" element={<MyGalleryPage />} />
 
         </Routes>
       </BrowserRouter>
