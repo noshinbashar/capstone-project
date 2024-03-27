@@ -5,7 +5,7 @@ function ImageList({ Imagelist, selectedImage }) {
     return (
         <>
             <div className="images">
-                <p className="images__title">More Paintings</p>
+                <p className="images__title">More Art Works</p>
                 <ul className="imagelist">
                     {Imagelist
                         .filter((images) => (images.id) !== selectedImage.id)

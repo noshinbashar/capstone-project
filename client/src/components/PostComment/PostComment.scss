@@ -61,7 +61,7 @@
     }
 
     &__btn {
-        background-color: $BrushBeat-Blue;
+        background-color: $BrushBeat-DarkBlue;
         width: 90%;
         height: 35px;
         border-radius: 20px;
@@ -73,11 +73,11 @@
         // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
         &:hover {
-            background-color: darken($BrushBeat-Blue, 10%);
+            background-color: darken($BrushBeat-DarkBlue, 10%);
         }
 
         &:active {
-            background-color: lighten($BrushBeat-Blue, 10%);
+            background-color: lighten($BrushBeat-DarkBlue, 10%);
             box-shadow: none;
         }
 
