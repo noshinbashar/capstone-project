@@ -3,14 +3,19 @@
 @use "../../styles/partials/fonts" as *;
 
 .mainpage {
-    @include desktop {
-        display: flex;
-    }
+  @include desktop {
+    display: flex;
   }
+}
 
-  .itemone {
-    @include desktop {
-        width: 70%;
-    }
+.itemone {
+  @include desktop {
+    width: 60%;
   }
-  
+}
+
+.itemtwo {
+  @include desktop {
+    width: 40%;
+  }
+}

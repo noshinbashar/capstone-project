@@ -5,9 +5,23 @@
 .newComment {
     margin: 5%;
 
+    &__box {
+        @include tablet {
+            padding: 0 5%;
+        }
+
+        @include desktop {
+            padding: 0 2%;
+        }
+    }
+
     &__input {
         display: flex;
         justify-content: center;
+
+        @include tablet {
+            justify-content: end;
+        }
     }
 
     &__text-input {
@@ -23,11 +37,27 @@
         &::placeholder {
             color: #468B97;
         }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 1.5px solid $BrushBeat-Blue;
+            background-color: $Mercury;
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: 2%;
+            height: 35px;
+        }
     }
 
     &__button {
         display: flex;
         justify-content: center;
+
+        @include tablet {
+            justify-content: end;
+        }
     }
 
     &__btn {
@@ -49,6 +79,11 @@
         &:active {
             background-color: lighten($BrushBeat-Blue, 10%);
             box-shadow: none;
+        }
+
+        @include tablet {
+            width: 25%;
+            height: 35px;
         }
     }
 }

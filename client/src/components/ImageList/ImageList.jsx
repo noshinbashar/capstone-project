@@ -5,7 +5,7 @@ function ImageList({ Imagelist, selectedImage }) {
     return (
         <>
             <div className="images">
-                {/* <p className="title">NEXT IMAGES</p> */}
+                <p className="images__title">More Paintings</p>
                 <ul className="imagelist">
                     {Imagelist
                         .filter((images) => (images.id) !== selectedImage.id)
@@ -13,7 +13,7 @@ function ImageList({ Imagelist, selectedImage }) {
                             return (
                                 <Link to={`/${images.id}`} className="link">    {/* adding this className to remove text decoration  */}
                                     <li className="imagelist__item" >
-                                        <p><img className="imagelist__images" src={`${images.image}`} alt="image List"></img></p>
+                                        <img className="imagelist__images" src={`${images.image}`} alt="image List"></img>
                                         {/* <div className="imagelist__info">
                                             <p className="imagelist__title">{images.title}</p>
                                             <p className="imagelist__channel">{images.medium}</p>

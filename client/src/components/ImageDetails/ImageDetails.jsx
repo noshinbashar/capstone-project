@@ -17,12 +17,12 @@ function ImageDetails({ selectedImage }) {
           <p>{selectedImage.title}</p>
         </div>
 
-        <div className="selectedImage__description">
-          <p>{selectedImage.description}</p>
-        </div>
-
         <div className="selectedImage__medium">
           <p>{selectedImage.medium}</p>
+        </div>
+
+        <div className="selectedImage__description">
+          <p>{selectedImage.description}</p>
         </div>
 
         <div className="selectedImage__container">
@@ -31,13 +31,15 @@ function ImageDetails({ selectedImage }) {
 
         <div className="data">
 
-          <div className="data__time">
-            <p>{formatDate(selectedImage.timestamp)}</p>
-          </div>
-
           <div className="data__item">
             <p className="data__interaction"> <img className="data__icons" src={Likes} alt="Likes" /> {selectedImage.likes}</p>
           </div>
+
+          <div className="data__time">
+            <p>Posted on {formatDate(selectedImage.timestamp)}</p>
+          </div>
+
+
 
         </div>
 
