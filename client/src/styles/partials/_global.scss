@@ -2,11 +2,13 @@
 @use "./fonts" as *;
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    font-family:'AvenirNext LT Pro', sans-serif;
-  }
+body {
+  font-family: 'AvenirNext LT Pro', sans-serif;
+}
 
-  
+.link {
+  text-decoration: none;
+}
