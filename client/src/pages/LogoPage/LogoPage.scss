@@ -1,0 +1,190 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+.logoBox {
+    display: flex;
+    justify-content: center;
+
+
+    &__container {
+        width: 13rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__image {
+        width: 10rem;
+        padding-left: 1.5rem;
+        opacity: 0;
+        /* Start with zero opacity */
+        animation: fadeIn 4s ease forwards;
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                /* Start with zero opacity */
+            }
+
+            to {
+                opacity: 1;
+                /* End with full opacity */
+            }
+        }
+
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $BrushBeat-DarkBlue;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        overflow: hidden;
+        /* Ensure text overflow is hidden */
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        animation: typing 4s steps(30) forwards;
+        /* Animation */
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+            /* Start with no width */
+        }
+
+        to {
+            width: 100%;
+            /* End with full width */
+        }
+    }
+}
+
+
+.imageBox {
+    display: flex;
+    justify-content: center;
+
+    animation: upDown 5s ease infinite alternate;
+    /* Animation */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__image-one {
+        width: 10rem;
+        animation: up 2.5s ease infinite alternate;
+        /* Animation */
+    }
+
+    &__image-two {
+        width: 4rem;
+        animation: down 2.5s ease infinite alternate;
+        /* Animation */
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(0);
+            /* Start position */
+        }
+
+        100% {
+            transform: translateY(20px);
+            /* End position */
+        }
+    }
+
+    @keyframes up {
+        0% {
+            transform: translateY(0);
+            /* Start position */
+        }
+
+        100% {
+            transform: translateY(-10px);
+            /* End position */
+        }
+    }
+
+    @keyframes down {
+        0% {
+            transform: translateY(0);
+            /* Start position */
+        }
+
+        100% {
+            transform: translateY(10px);
+            /* End position */
+        }
+    }
+}
+
+.logoButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+
+    &__btn {
+        border: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: #FEEDAB;
+        color: $BrushBeat-DarkBlue;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 4px #FF6584;
+        font-weight: 700;
+        font-size: 18px;
+        /* Initial background color */
+        animation: pulse 5s infinite alternate, moveUpDown 3s infinite alternate;
+        transition: background-color 1s ease;
+
+        /* Apply the pulse animation */
+
+        &:hover {
+            animation: none;
+            /* Remove animation on hover */
+            background-color: #FF6584;
+            /* New background color on hover */
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #FEEDAB;
+    }
+
+    40% {
+        background-color: #FEEDAB;
+    }
+
+    100% {
+        background-color: #B7E3D4;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Middle position - move up */
+    }
+}
