@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { Link, NavLink } from 'react-router-dom';
 import React, { useState } from "react";
+import Logo from "./../../assets/Images/Brush.png"
 
 function Header() {
     const [menuOpen, SetMenuOpen] = useState(false)
@@ -8,7 +9,7 @@ function Header() {
         <>
             <div className="header">
                 <div>
-                    <Link className="logo" to="/">logo</Link>
+                    <Link className="logo" to="/"><img className="logo__image" src={Logo} alt="Logo" /></Link>
                 </div>
 
                 <div className="menu" onClick={() => {
