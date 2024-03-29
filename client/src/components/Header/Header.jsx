@@ -19,7 +19,6 @@ function Header() {
                     <span className="menu__span"></span>
                 </div>
                 <ul className={menuOpen ? "open" : "nav"}>
-                    {/* <ul className="nav"> */}
                     <li className="nav__list"> <NavLink className="nav__link" to="/about">About</NavLink></li>
                     <li className="nav__list"> <NavLink className="nav__link" to="/gallery">Gallery</NavLink></li>
                     <li className="nav__list"> <NavLink className="nav__link" to="/mygallery">My Gallery</NavLink></li>

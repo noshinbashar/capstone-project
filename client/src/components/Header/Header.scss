@@ -3,7 +3,7 @@
 @use "../../styles/partials/fonts" as *;
 
 .active {
-    background-color: $BrushBeat-Blue;
+    border-bottom: 2px solid $BrushBeat-Black;
 }
 
 .logo {
@@ -11,19 +11,22 @@
     margin: 1rem;
     text-decoration: none;
     font-weight: 600;
-    color: $White;
+    color: $BrushBeat-Black;
 
 }
 
 .header {
     padding: 5%;
+    padding-bottom: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $BrushBeat-DarkBlue;
-    // position: sticky;
-    // top: 0;
+    background-color: $White;
     width: 100%;
+
+    @include tablet {
+        padding-top: 3%;
+    }
 }
 
 .nav {
@@ -35,13 +38,13 @@
 
     &__link {
         text-decoration: none;
-        color: $White;
-        padding: 0.5rem;
+        color: $BrushBeat-Black;
+        font-weight: 600;
+        padding: 0.4rem;
         margin: 0 0.5rem;
-        border-radius: 0.5rem;
 
         &:not(.active):hover {
-            background-color: gray;
+            border-bottom: 2px solid $BrushBeat-Black;
         }
     }
 }
@@ -56,14 +59,15 @@
     width: 1.5rem;
     height: 1rem;
 
+
     &__span {
-        height: 0.1rem;
-        background-color: $White;
+        height: 0.2rem;
+        background-color: $BrushBeat-Black;
         border-radius: 0.2rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .menu {
         display: flex;
     }
@@ -79,17 +83,11 @@
         flex-direction: column;
         justify-content: end;
         width: 100%;
-        padding-top: 0.5rem;
+        padding-top: 0%;
 
         &__list {
             text-align: end;
             margin: 0.5rem 0.5rem;
-        }
-
-        &__link {
-
-            padding: 0.2rem 1rem;
-            border-radius: 1rem;
         }
     }
 
@@ -98,17 +96,16 @@
         flex-direction: column;
         justify-content: end;
         width: 100%;
-        padding-top: 0.5rem;
 
         &__list {
             text-align: end;
             margin: 0.5rem 0.5rem;
+            padding-top: 0%;
         }
 
         &__link {
+            padding: 0.4rem;
 
-            padding: 0.2rem 1rem;
-            border-radius: 1rem;
         }
     }
 
