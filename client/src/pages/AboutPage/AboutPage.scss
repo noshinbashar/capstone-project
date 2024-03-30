@@ -5,16 +5,15 @@
 .about-container {
     display: flex;
     justify-content: center;
-    background-image: url('./../../assets/Images/background.jpg');
+    background-image: url('./../../assets/Images/painting_background.jpg');
     // background-image: url('./../../assets/Images/backgroundd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 
-
     .aboutPage {
         width: 80%;
-        background-color: $White;
+        background-color: $BrushBeat-DarkBlue;
         opacity: 0.85;
         padding: 0.5rem 1.5rem;
         margin: 5rem 0;
@@ -33,7 +32,7 @@
             text-align: center;
             padding: 1rem 0;
             font-weight: 700;
-            color: $BrushBeat-Black;
+            color: $White;
             font-size: 20px;
         }
 
@@ -41,7 +40,7 @@
             text-align: center;
             padding: 0.5rem 0;
             font-weight: 600;
-            color: $BrushBeat-Black;
+            color: $White;
             font-size: 16px;
 
         }
@@ -51,11 +50,11 @@
             padding: 0.5rem 0;
             font-size: 14px;
             line-height: 1.5;
-            color: $BrushBeat-Black;
+            color: $White;
         }
 
         &__email {
-            color: $BrushBeat-Black;
+            color: $White;
             text-decoration: none;
 
             &:hover {
@@ -68,24 +67,30 @@
             overflow: hidden;
             font-size: 14px;
             line-height: 1.5;
-            color: $BrushBeat-Black;
+            color: $White;
             transition: max-height 0.3s ease;
         }
 
         .button {
             background: none;
             border: none;
-            color: $BrushBeat-DarkBlue;
+            color: $White;
             cursor: pointer;
             margin-top: 0%;
             font-weight: 600;
+            transition: font-size 0.3s ease;
+
+            &:hover {
+                font-size: 14px;
+                text-decoration: underline;
+            }
         }
 
         .show {
             max-height: 100rem;
             font-size: 14px;
             line-height: 1.5;
-            color: $BrushBeat-Black;
+            color: $White;
         }
 
         .hide {
