@@ -2,67 +2,78 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/fonts" as *;
 
+
+.logopage {
+    margin-top: 3rem;
+
+    @include desktop {
+        margin-top: 2rem;
+    }
+}
+
 .logoBox {
+    padding-left: 0.7rem;
     display: flex;
     justify-content: center;
 
 
     &__container {
-        width: 13rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 3rem;
-        padding-left: 1rem;
+        margin-top: 0%;
         margin-bottom: 1rem;
+
 
     }
 
     &__image {
-        width: 10rem;
-        padding-left: 1.5rem;
+        width: 12rem;
+        // padding-left: 0.5rem;
         opacity: 0;
-        /* Start with zero opacity */
-        animation: fadeIn 4s ease forwards;
+        animation: fadeIn 5s ease forwards;
+
+        @include tablet {
+            margin-left: 1rem;
+        }
 
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                /* Start with zero opacity */
             }
 
             to {
                 opacity: 1;
-                /* End with full opacity */
             }
         }
 
     }
 
     &__text {
-        font-size: 15px;
+        font-size: 16px;
+        margin-top: 2rem;
         color: $BrushBeat-DarkBlue;
         font-weight: 600;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         overflow: hidden;
-        /* Ensure text overflow is hidden */
         white-space: nowrap;
-        /* Prevent text from wrapping */
-        animation: typing 4s steps(30) forwards;
-        /* Animation */
+        animation: typing 3s steps(30) forwards;
+
+        @include tablet {
+            font-size: 18px;
+        }
     }
 
     @keyframes typing {
         from {
             width: 0;
-            /* Start with no width */
         }
 
         to {
             width: 100%;
-            /* End with full width */
         }
     }
 }
@@ -71,61 +82,90 @@
 .imageBox {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 
     animation: upDown 5s ease infinite alternate;
-    /* Animation */
+    animation: fadeIn 5s ease forwards;
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
+
+    @include desktop {
+        margin-bottom: 0%;
+    }
+
 
     &__image-one {
-        width: 10rem;
+        width: 14rem;
         animation: up 2.5s ease infinite alternate;
-        /* Animation */
+
+        @include tablet {
+            width: 17rem;
+            margin-right: 2rem;
+        }
+
+        @include desktop {
+            width: 20rem;
+        }
     }
 
     &__image-two {
-        width: 4rem;
+        width: 5rem;
+        padding-bottom: 2rem;
         animation: down 2.5s ease infinite alternate;
-        /* Animation */
+
+        @include tablet {
+            width: 7rem;
+            // margin-left: 2rem;
+        }
+
+        @include desktop {
+            width: 10rem;
+        }
     }
 
     @keyframes upDown {
         0% {
             transform: translateY(0);
-            /* Start position */
         }
 
         100% {
             transform: translateY(20px);
-            /* End position */
         }
     }
 
     @keyframes up {
         0% {
             transform: translateY(0);
-            /* Start position */
         }
 
         100% {
             transform: translateY(-10px);
-            /* End position */
         }
     }
 
     @keyframes down {
         0% {
             transform: translateY(0);
-            /* Start position */
         }
 
         100% {
-            transform: translateY(10px);
-            /* End position */
+            transform: translateY(20px);
         }
     }
 }
@@ -133,58 +173,40 @@
 .logoButton {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
 
-    &__btn {
-        border: none;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        background-color: #FEEDAB;
-        color: $BrushBeat-DarkBlue;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        box-shadow: 2px 2px 4px #FF6584;
-        font-weight: 700;
-        font-size: 18px;
-        /* Initial background color */
-        animation: pulse 5s infinite alternate, moveUpDown 3s infinite alternate;
-        transition: background-color 1s ease;
+    animation: fadeIn 5s ease forwards;
 
-        /* Apply the pulse animation */
 
-        &:hover {
-            animation: none;
-            /* Remove animation on hover */
-            background-color: #FF6584;
-            /* New background color on hover */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
         }
     }
-}
 
-@keyframes pulse {
-    0% {
-        background-color: #FEEDAB;
-    }
 
-    40% {
-        background-color: #FEEDAB;
-    }
+    &__btn {
+        background-color: $BrushBeat-DarkBlue;
+        height: 2rem;
+        border-radius: 2.5rem;
+        padding: 0.5rem;
+        border: none;
+        color: $White;
+        font-weight: 600;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
-    100% {
-        background-color: #B7E3D4;
-    }
-}
+        &:hover {
+            background-color: darken($BrushBeat-DarkBlue, 10%);
+        }
 
-@keyframes moveUpDown {
-
-    0%,
-    100% {
-        transform: translateY(0);
-        /* Start and end position */
-    }
-
-    50% {
-        transform: translateY(-20px);
-        /* Middle position - move up */
+        &:active {
+            background-color: lighten($BrushBeat-DarkBlue, 10%);
+            box-shadow: none;
+        }
     }
 }
