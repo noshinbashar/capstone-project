@@ -34,13 +34,13 @@
     width: 100%;
 
     @include tablet {
-        padding-top: 3%;
+        padding-top: 1%;
         padding-left: 4%;
         padding-right: 4%;
     }
 
     @include desktop {
-        padding-top: 2%;
+        // padding-top: 1%;
         padding-left: 2%;
         padding-right: 3.5%;
 

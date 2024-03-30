@@ -1,0 +1,95 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    background-image: url('./../../assets/Images/background.jpg');
+    // background-image: url('./../../assets/Images/backgroundd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+
+    .aboutPage {
+        width: 80%;
+        background-color: $White;
+        opacity: 0.85;
+        padding: 0.5rem 1.5rem;
+        margin: 5rem 0;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+
+        @include tablet {
+            padding: 1rem 3rem;
+            width: 70%;
+        }
+
+        @include desktop {
+            width: 50%;
+        }
+
+        &__main-title {
+            text-align: center;
+            padding: 1rem 0;
+            font-weight: 700;
+            color: $BrushBeat-Black;
+            font-size: 20px;
+        }
+
+        &__title {
+            text-align: center;
+            padding: 0.5rem 0;
+            font-weight: 600;
+            color: $BrushBeat-Black;
+            font-size: 16px;
+
+        }
+
+        &__text {
+            text-align: center;
+            padding: 0.5rem 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: $BrushBeat-Black;
+        }
+
+        &__email {
+            color: $BrushBeat-Black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        ol {
+            max-height: 0;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 1.5;
+            color: $BrushBeat-Black;
+            transition: max-height 0.3s ease;
+        }
+
+        .button {
+            background: none;
+            border: none;
+            color: $BrushBeat-DarkBlue;
+            cursor: pointer;
+            margin-top: 0%;
+            font-weight: 600;
+        }
+
+        .show {
+            max-height: 100rem;
+            font-size: 14px;
+            line-height: 1.5;
+            color: $BrushBeat-Black;
+        }
+
+        .hide {
+            max-height: 0;
+        }
+    }
+}
