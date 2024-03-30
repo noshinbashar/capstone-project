@@ -1,0 +1,279 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.gallery {
+    margin: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 90%;
+
+    @include tablet {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    &__title {
+        color: $BrushBeat-Black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__description {
+        color: $BrushBeat-Black;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+        padding-bottom: 2%;
+    }
+
+    &__medium {
+        color: $BrushBeat-Black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__name {
+        color: $BrushBeat-DarkBlue;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__image {
+        width: 90%;
+        object-fit: cover;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+        transition: transform 0.4s ease, box-shadow 0.3s ease;
+        ;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+            box-shadow: none;
+        }
+
+        @include tablet {
+            width: 90%;
+        }
+    }
+}
+
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 2% 5%;
+
+    &__item {
+        width: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__interaction {
+        display: flex;
+        color: $BrushBeat-Black;
+    }
+
+    &__icons {
+        padding-right: 5px;
+        filter: invert(55%) sepia(55%) saturate(3856%) hue-rotate(326deg) brightness(102%) contrast(89%);
+    }
+
+    &__time {
+        color: $BrushBeat-Black;
+    }
+}
+
+.galleryComment {
+    margin: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 90%;
+
+    @include tablet {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    &__box {
+        @include tablet {
+            padding: 0 5%;
+        }
+
+        @include desktop {
+            padding: 0 2%;
+        }
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            justify-content: end;
+        }
+    }
+
+    &__text-input {
+        border: transparent;
+        width: 90%;
+        height: 35px;
+        border-radius: 20px;
+        padding: 5%;
+        outline: none;
+        border: 1px solid $Mercury;
+        background-color: $Alabaster;
+
+        &::placeholder {
+            color: #468B97;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 1.5px solid $BrushBeat-Blue;
+            background-color: $Mercury;
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: 2%;
+            height: 35px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            justify-content: end;
+        }
+    }
+
+    &__btn {
+        background-color: $BrushBeat-DarkBlue;
+        width: 90%;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        color: $White;
+        font-weight: 600;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            background-color: darken($BrushBeat-DarkBlue, 10%);
+        }
+
+        &:active {
+            background-color: lighten($BrushBeat-DarkBlue, 10%);
+            box-shadow: none;
+        }
+
+        @include tablet {
+            width: 25%;
+            height: 35px;
+        }
+    }
+}
+
+
+.gallery-comments {
+    margin: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 90%;
+
+    @include tablet {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    &__box {
+        padding-inline-start: 0%;
+        border-bottom: 1px solid $White;
+
+        @include tablet {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+
+.list {
+    list-style-type: none;
+    border-top: 1px solid $White;
+    font-size: 14px;
+    padding-left: 20%;
+    line-height: 1.5;
+    position: relative;
+
+    @include tablet {
+        padding-left: 9%;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+
+    &__time {
+        position: absolute;
+        top: 0%;
+        right: 5%;
+        color: $Silver;
+
+        @include tablet {
+            right: 0%;
+        }
+    }
+
+    &__image {
+        //This represents profile image for each comment
+        width: 40px;
+        height: 40px;
+        background-color: $BrushBeat-Yellow;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+}
+
+.comment-item {
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        //This represents like icon for each comment
+        width: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__like {
+        filter: invert(55%) sepia(55%) saturate(3856%) hue-rotate(326deg) brightness(102%) contrast(89%);
+    }
+
+    &__count {
+        color: $BrushBeat-Black;
+    }
+
+    &__button {
+        background-color: $White;
+        border: none;
+    }
+
+}
