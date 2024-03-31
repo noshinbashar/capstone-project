@@ -2,16 +2,51 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/fonts" as *;
 
+.gallery-page {
+    background-color: $White;
 
-.gallery {
+}
+
+.gallery-container {
     margin: 5%;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
+    padding: 5%;
     width: 90%;
+    background-color: $White ;
+    border: 1px $Mercury solid;
+
 
     @include tablet {
-        width: 50%;
-        margin: 0 25%;
+        width: 70%;
+        margin: 5% 15%;
+        padding: 2%;
+    }
+
+    @include desktop {
+        width: 55%;
+        margin: 3% 20%;
+        padding: 1% 2%;
+    }
+}
+
+.gallery {
+    // margin: 5%;
+    // margin-bottom: 0%;
+    // padding-bottom: 0%;
+    // width: 90%;
+    // // background-color: $Mercury ;
+
+    // @include tablet {
+    //     width: 50%;
+    //     margin: 0 25%;
+    // }
+
+    &__title-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box-two {
+        text-align: end;
     }
 
     &__title {
@@ -95,15 +130,15 @@
 }
 
 .galleryComment {
-    margin: 5%;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    width: 90%;
+    // margin: 5%;
+    // margin-bottom: 0%;
+    // padding-bottom: 0%;
+    // width: 90%;
 
-    @include tablet {
-        width: 50%;
-        margin: 0 25%;
-    }
+    // @include tablet {
+    //     width: 50%;
+    //     margin: 0 25%;
+    // }
 
     &__box {
         @include tablet {
@@ -190,15 +225,15 @@
 
 
 .gallery-comments {
-    margin: 5%;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    width: 90%;
+    // margin: 5%;
+    // margin-bottom: 0%;
+    // padding-bottom: 0%;
+    // width: 90%;
 
-    @include tablet {
-        width: 50%;
-        margin: 0 25%;
-    }
+    // @include tablet {
+    //     width: 50%;
+    //     margin: 0 25%;
+    // }
 
     &__box {
         padding-inline-start: 0%;
@@ -212,7 +247,7 @@
 }
 
 
-.list {
+.comment-list {
     list-style-type: none;
     border-top: 1px solid $White;
     font-size: 14px;
@@ -221,8 +256,13 @@
     position: relative;
 
     @include tablet {
-        padding-left: 9%;
+        padding-left: 12%;
     }
+
+    @include desktop {
+        padding-left: 10%;
+    }
+
 
     &__name {
         font-weight: 600;
