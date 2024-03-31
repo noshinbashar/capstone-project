@@ -1,1 +1,368 @@
-[{"id":"0","title":"A Turtle's Journey","medium":"Watercolor on canvas","image":"http://localhost:8080/images/image-0.jpg","description":"This painting is all about a turtle enjoying a swim in the sea. It's painted with watercolors on canvas, giving it a soft and gentle look. The turtle is the star of the show, gracefully gliding through the water. The colors are calming, like the peaceful ocean. Looking at it, you can almost imagine yourself swimming alongside the turtle, feeling the tranquility of the sea. It's a beautiful picture that makes you feel happy and relaxed.","views":"980","likes":"75","timestamp":1710484962000,"comments":[{"id":"0","name":"Emily Smith","comment":"I feel like I'm swimming alongside the turtle in this painting! It's so peaceful and beautiful. Can't wait to see more of your wonderful artworks!","likes":2,"timestamp":1710884962000},{"id":"1","name":"Alex Johnson","comment":"This painting really captures the essence of serenity. The turtle's journey feels like a tranquil escape into nature's beauty. Absolutely mesmerizing!","likes":3,"timestamp":1710784962000},{"id":"2","name":"Sophie Brown","comment":"Your artwork takes me to a place of calmness and wonder. I love how the colors blend together to create a sense of peace. Looking forward to more captivating pieces!","likes":5,"timestamp":1710684962000}]},{"id":"1","title":"Mountain Refuge","medium":"Digital painting software","image":"http://localhost:8080/images/image-1.jpg","description":"In the middle of the rough mountains, there's a calm place where a small tent finds peace among the big peaks. The mountains are covered in snow, and the sky is calm and blue. The tent seems like a safe spot, a cozy place in the wildness of the mountains. It feels like a warm embrace from nature, a peaceful hideaway surrounded by the grand mountains.","views":"809","likes":"100","timestamp":1710584962000,"comments":[{"id":"0","name":"Emma Brown","comment":"Your painting truly captures the serenity of the mountains! It feels like I'm right there, breathing in the crisp air and feeling the tranquility of nature. Keep up the amazing work!","likes":5,"timestamp":1710784962000},{"id":"1","name":"Alex Johnson","comment":"This painting is like a peaceful escape from the chaos of daily life. It makes me want to pack my bags and head for the mountains! Thank you for sharing this beautiful piece with us.","likes":2,"timestamp":1710994962000},{"id":"2","name":"Brandy Smith","comment":"I love how your artwork transports me to another world. It's like a mini vacation for my mind! Your attention to detail and the soothing colors you use create such a serene atmosphere. Can't wait to see more of your creations!","likes":4,"timestamp":1710895962000}]},{"id":"2","title":"A Cat's Gaze","medium":"Acrylic on canvas","image":"http://localhost:8080/images/image-2.jpg","description":"This painting shows a calm cat looking peacefully at you. It's made with acrylic paint on canvas. The soft colors  make the scene very peaceful. There are also some pretty flowers and leaves in the painting, adding to its charm. It's a lovely piece of art to enjoy.","views":"798","likes":"98","timestamp":1710725962000,"comments":[{"id":"0","name":"Lily Chen","comment":"It's like a moment of peaceful stillness frozen in time. Beautiful work!","likes":3,"timestamp":1710994962000},{"id":"1","name":"Michael Johnson","comment":"Your attention to detail in depicting the cat's expression is incredible. It feels like the cat is looking straight into my soul. Such a captivating piece!","likes":9,"timestamp":1710994962000},{"id":"3","name":"Sophia Lee","comment":"I find myself getting lost in the calmness of this painting. It's like a soothing balm for the soul. Thank you for sharing this serene artwork with us!","likes":5,"timestamp":1710725962000}]},{"id":"3","title":"Spring Day by the River","medium":"Watercolor on paper","image":"http://localhost:8080/images/image-3.jpg","description":"On a beautiful spring day, the sun shines gently on the ice-capped mountains overlooking the tranquil river. Wooden boats line the riverbank, their reflections shimmering on the water's surface. Birds chirp happily as they fly overhead, adding to the peaceful atmosphere. It's a scene of serenity and beauty, capturing the essence of a perfect spring day.","views":"739","likes":"109","timestamp":1710904962000,"comments":[{"id":"0","name":"Ella Chang","comment":"Your painting evokes such a sense of tranquility and beauty. I can almost feel the warmth of the sun and hear the gentle flow of the river. It's a masterpiece!","likes":2,"timestamp":1710914962000},{"id":"1","name":"Ryan Patel","comment":"I love how your painting captures the essence of spring. The ice-capped mountains, the flowing river, and the wooden boats create such a serene and idyllic scene. It's truly captivating!","likes":3,"timestamp":1710994962000},{"id":"2","name":"Liam Roberts","comment":"Your painting transports me to a peaceful riverside retreat. The reflection of the mountains and boats on the water is so beautifully done. It's like stepping into a dream!","likes":5,"timestamp":1710994962000}]},{"id":"4","title":"Blue Shore","medium":"Oil on canvas","image":"http://localhost:8080/images/image-4.jpg","description":"This painting shows a calm beach with blue water and sandy shores. The waves gently lap against the rocks, creating a soothing melody. The sunlight shines softly on the water, creating a soothing atmosphere. It's a peaceful scene that makes you feel relaxed and happy","views":"720","likes":"93","timestamp":1710584962000,"comments":[{"id":"0","name":"Samantha Lee","comment":"This painting instantly transports me to my happy place. The blue sea, sandy shore, and rugged rocks create such a serene atmosphere. It's like a little piece of paradise captured on canvas!","likes":3,"timestamp":1711070060182},{"id":"1","name":"David Smith","comment":"I love how the rocks add character to the beach scene. They provide a sense of stability amidst the ever-changing waves. It's a beautiful reminder of nature's enduring presence.","likes":2,"timestamp":1710994962000},{"id":"2","name":"Emily Johnson","comment":"The combination of the blue sea, sandy beach, and rocky outcrops creates a picturesque scene that feels both serene and inviting. It's the kind of place I'd love to escape to for a peaceful day by the ocean.","likes":1,"timestamp":1710904962000},{"id":"3","name":"Jacob Martinez","comment":"The rocks beside the shore add a touch of rugged beauty to the tranquil scene. They provide a sense of contrast to the softness of the sand and the calmness of the sea. It's a beautifully balanced composition.","likes":2,"timestamp":1710784962000},{"id":"4","name":"Sophia Brown","comment":"I can almost hear the sound of the waves crashing against the rocks and feel the gentle breeze on my face. This painting captures the essence of a peaceful day by the ocean perfectly. It's like a soothing balm for the soul.","likes":5,"timestamp":1710784962000}]},{"id":"5","title":"The Wild Orchid","medium":"Acrylic on canvas","image":"http://localhost:8080/images/image-5.jpg","description":"A single wild orchid blooms gracefully, its delicate petals painted with hints of blue. The flower stands alone, exuding a sense of quiet beauty and elegance. Each brushstroke captures the essence of this solitary bloom, inviting the viewer to contemplate its beauty.","views":"548","likes":"106","timestamp":1710484962000,"comments":[{"id":"0","name":"Sophie Rodriguez","comment":"The wild orchid in this painting is mesmerizing! It's a captivating portrayal of the delicate beauty of nature.","likes":5,"timestamp":1710784962000},{"id":"1","name":"Emma White","comment":"There's something so serene about this orchid in this painting. It's like a moment of stillness and contemplation captured on canvas.","likes":2,"timestamp":1710384962000},{"id":"2","name":"Ryan Martinez","comment":"The simplicity of this painting is its greatest strength. This beautiful orchid invites you to appreciate its beauty in all its quiet glory. It's truly enchanting.","likes":9,"timestamp":1710284962000}]},{"id":"6","title":"Hand Sketch","medium":"Pencil sketch","image":"http://localhost:8080/images/image-6.jpg","description":"This pencil sketch shows a simple drawing of a hand. It's a basic yet detailed representation of a human hand, capturing its shape and features. Each line and shading adds depth and dimension to the sketch, making it an interesting study in form and texture.","views":"752","likes":"102","timestamp":1710284962000,"comments":[{"id":"0","name":"Ethan Johnson","comment":"This sketch beautifully portrays the details of a hand! It's a great example of capturing realistic features with pencil.","likes":8,"timestamp":1710784962000},{"id":"1","name":"Sophia Martinez","comment":"I like how this sketch focuses on simplicity. It's a great starting point for learning to draw.","likes":5,"timestamp":1710384962000},{"id":"2","name":"Liam Brown","comment":"This sketch reminds me of practicing drawing hands in art class. It's a skillful representation!","likes":5,"timestamp":1710284962000},{"id":"3","name":"Ava Thompson","comment":"The detail in this sketch is impressive! It's like seeing a hand come to life on paper.","likes":9,"timestamp":1710184962000},{"id":"4","name":"Noah White","comment":"I appreciate the effort put into capturing the intricacies of a hand. It's a wonderful study in pencil drawing.","likes":7,"timestamp":1710284962000}]},{"id":"7","title":"Winter Village","medium":"Acrylic on canvas","image":"http://localhost:8080/images/image-7.jpg","description":"This painting depicts a snowy winter village nestled among mountains. Snow-covered rooftops and trees are dusted with snow create a cozy atmosphere. It feels like you're stepping into a quiet winter wonderland, where the air is crisp and everything is serene.","views":"1307","likes":"231","timestamp":1710084962000,"comments":[{"id":"0","name":"Liam Smith","comment":"This painting transports me to a snowy winter village! It captures the magic of winter with its cozy atmosphere and snow-covered landscape.","likes":8,"timestamp":1710384962000},{"id":"1","name":"Ava Martinez","comment":"I love the tranquil feeling of this painting! The snowy village scene is so serene and inviting. It's like a peaceful escape from the busyness of everyday life.","likes":9,"timestamp":1711073611233}]},{"id":"8","title":"Sunflowers and Vase","medium":"Watercolor on paper","image":"http://localhost:8080/images/image-8.jpg","description":"This painting features a bouquet of sunflowers in a vase, bringing a burst of color and warmth to the room. The vibrant yellow petals stand out against the backdrop, creating a cheerful atmosphere. It's like bringing a piece of sunshine indoors, filling the space with joy and happiness.","views":"1024","likes":"385","timestamp":1710084962000,"comments":[{"id":"0","name":"Liam Roberts","comment":"I'm reminded of sunny days in the countryside with this painting! The sunflowers are so cheerful and vibrant, brightening up the room and lifting my spirits.","likes":8,"timestamp":1710784962000},{"id":"1","name":"Sophia Martinez","comment":"I love the warmth and beauty of this painting! The sunflowers in the vase add a touch of nature's beauty to any space. It's like having a piece of summer in your home.","likes":5,"timestamp":1710384962000}]},{"id":"9","title":"Bluebird and Cherry Blossoms","medium":"Acrylic on canvas","image":"http://localhost:8080/images/image-9.jpg","description":"This painting shows a lovely picture of a bluebird sitting on a tree branch covered in pretty cherry blossoms. The bird's feathers shine with shades of blue, making the scene more colorful and peaceful. The cherry blossoms are white and look very beautiful, making a nice background against the blue sky. It's a peaceful and beautiful moment captured with paint on canvas.","views":"899","likes":"214","timestamp":1710084962000,"comments":[{"id":"0","name":"Emily Johnson","comment":"Wow! This painting is stunning! The bird and flowers are so pretty together.","likes":4,"timestamp":1710784962000},{"id":"1","name":"Michael Smith","comment":"I really like this painting! It makes me happy to look at the bird and flowers.","likes":8,"timestamp":1710384962000},{"id":"2","name":"Sophia Lee","comment":"This painting is wonderful! It feels like I'm in a peaceful garden with the bird and flowers.","likes":6,"timestamp":1710284962000}]}]
+[
+    {
+        "id": "0",
+        "title": "A Turtle's Journey",
+        "medium": "Watercolor on canvas",
+        "image": "http://localhost:8080/images/image-0.jpg",
+        "description": "This painting is all about a turtle enjoying a swim in the sea. It's painted with watercolors on canvas, giving it a soft and gentle look. The turtle is the star of the show, gracefully gliding through the water. The colors are calming, like the peaceful ocean. Looking at it, you can almost imagine yourself swimming alongside the turtle, feeling the tranquility of the sea. It's a beautiful picture that makes you feel happy and relaxed.",
+        "likes": "75",
+        "timestamp": 1710484962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Emily Smith",
+                "comment": "I feel like I'm swimming alongside the turtle in this painting! It's so peaceful and beautiful. Can't wait to see more of your wonderful artworks!",
+                "likes": 2,
+                "timestamp": 1710884962000
+            },
+            {
+                "id": "1",
+                "name": "Alex Johnson",
+                "comment": "This painting really captures the essence of serenity. The turtle's journey feels like a tranquil escape into nature's beauty. Absolutely mesmerizing!",
+                "likes": 3,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "2",
+                "name": "Sophie Brown",
+                "comment": "Your artwork takes me to a place of calmness and wonder. I love how the colors blend together to create a sense of peace. Looking forward to more captivating pieces!",
+                "likes": 5,
+                "timestamp": 1710684962000
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "title": "Mountain Refuge",
+        "medium": "Digital painting software",
+        "image": "http://localhost:8080/images/image-1.jpg",
+        "description": "In the middle of the rough mountains, there's a calm place where a small tent finds peace among the big peaks. The mountains are covered in snow, and the sky is calm and blue. The tent seems like a safe spot, a cozy place in the wildness of the mountains. It feels like a warm embrace from nature, a peaceful hideaway surrounded by the grand mountains.",
+        "likes": "100",
+        "timestamp": 1710584962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Emma Brown",
+                "comment": "Your painting truly captures the serenity of the mountains! It feels like I'm right there, breathing in the crisp air and feeling the tranquility of nature. Keep up the amazing work!",
+                "likes": 5,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "1",
+                "name": "Alex Johnson",
+                "comment": "This painting is like a peaceful escape from the chaos of daily life. It makes me want to pack my bags and head for the mountains! Thank you for sharing this beautiful piece with us.",
+                "likes": 2,
+                "timestamp": 1710994962000
+            },
+            {
+                "id": "2",
+                "name": "Brandy Smith",
+                "comment": "I love how your artwork transports me to another world. It's like a mini vacation for my mind! Your attention to detail and the soothing colors you use create such a serene atmosphere. Can't wait to see more of your creations!",
+                "likes": 4,
+                "timestamp": 1710895962000
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "A Cat's Gaze",
+        "medium": "Acrylic on canvas",
+        "image": "http://localhost:8080/images/image-2.jpg",
+        "description": "This painting shows a calm cat looking peacefully at you. It's made with acrylic paint on canvas. The soft colors  make the scene very peaceful. There are also some pretty flowers and leaves in the painting, adding to its charm. It's a lovely piece of art to enjoy.",
+        "likes": "98",
+        "timestamp": 1710725962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Lily Chen",
+                "comment": "It's like a moment of peaceful stillness frozen in time. Beautiful work!",
+                "likes": 3,
+                "timestamp": 1710994962000
+            },
+            {
+                "id": "1",
+                "name": "Michael Johnson",
+                "comment": "Your attention to detail in depicting the cat's expression is incredible. It feels like the cat is looking straight into my soul. Such a captivating piece!",
+                "likes": 9,
+                "timestamp": 1710994962000
+            },
+            {
+                "id": "3",
+                "name": "Sophia Lee",
+                "comment": "I find myself getting lost in the calmness of this painting. It's like a soothing balm for the soul. Thank you for sharing this serene artwork with us!",
+                "likes": 5,
+                "timestamp": 1710725962000
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Spring Day by the River",
+        "medium": "Watercolor on paper",
+        "image": "http://localhost:8080/images/image-3.jpg",
+        "description": "On a beautiful spring day, the sun shines gently on the ice-capped mountains overlooking the tranquil river. Wooden boats line the riverbank, their reflections shimmering on the water's surface. Birds chirp happily as they fly overhead, adding to the peaceful atmosphere. It's a scene of serenity and beauty, capturing the essence of a perfect spring day.",
+        "likes": "109",
+        "timestamp": 1710904962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Ella Chang",
+                "comment": "Your painting evokes such a sense of tranquility and beauty. I can almost feel the warmth of the sun and hear the gentle flow of the river. It's a masterpiece!",
+                "likes": 2,
+                "timestamp": 1710914962000
+            },
+            {
+                "id": "1",
+                "name": "Ryan Patel",
+                "comment": "I love how your painting captures the essence of spring. The ice-capped mountains, the flowing river, and the wooden boats create such a serene and idyllic scene. It's truly captivating!",
+                "likes": 3,
+                "timestamp": 1710994962000
+            },
+            {
+                "id": "2",
+                "name": "Liam Roberts",
+                "comment": "Your painting transports me to a peaceful riverside retreat. The reflection of the mountains and boats on the water is so beautifully done. It's like stepping into a dream!",
+                "likes": 5,
+                "timestamp": 1710994962000
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Blue Shore",
+        "medium": "Oil on canvas",
+        "image": "http://localhost:8080/images/image-4.jpg",
+        "description": "This painting shows a calm beach with blue water and sandy shores. The waves gently lap against the rocks, creating a soothing melody. The sunlight shines softly on the water, creating a soothing atmosphere. It's a peaceful scene that makes you feel relaxed and happy",
+        "likes": "93",
+        "timestamp": 1710584962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Samantha Lee",
+                "comment": "This painting instantly transports me to my happy place. The blue sea, sandy shore, and rugged rocks create such a serene atmosphere. It's like a little piece of paradise captured on canvas!",
+                "likes": 3,
+                "timestamp": 1711070060182
+            },
+            {
+                "id": "1",
+                "name": "David Smith",
+                "comment": "I love how the rocks add character to the beach scene. They provide a sense of stability amidst the ever-changing waves. It's a beautiful reminder of nature's enduring presence.",
+                "likes": 2,
+                "timestamp": 1710994962000
+            },
+            {
+                "id": "2",
+                "name": "Emily Johnson",
+                "comment": "The combination of the blue sea, sandy beach, and rocky outcrops creates a picturesque scene that feels both serene and inviting. It's the kind of place I'd love to escape to for a peaceful day by the ocean.",
+                "likes": 1,
+                "timestamp": 1710904962000
+            },
+            {
+                "id": "3",
+                "name": "Jacob Martinez",
+                "comment": "The rocks beside the shore add a touch of rugged beauty to the tranquil scene. They provide a sense of contrast to the softness of the sand and the calmness of the sea. It's a beautifully balanced composition.",
+                "likes": 2,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "4",
+                "name": "Sophia Brown",
+                "comment": "I can almost hear the sound of the waves crashing against the rocks and feel the gentle breeze on my face. This painting captures the essence of a peaceful day by the ocean perfectly. It's like a soothing balm for the soul.",
+                "likes": 5,
+                "timestamp": 1710784962000
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "The Wild Orchid",
+        "medium": "Acrylic on canvas",
+        "image": "http://localhost:8080/images/image-5.jpg",
+        "description": "A single wild orchid blooms gracefully, its delicate petals painted with hints of blue. The flower stands alone, exuding a sense of quiet beauty and elegance. Each brushstroke captures the essence of this solitary bloom, inviting the viewer to contemplate its beauty.",
+        "likes": "106",
+        "timestamp": 1710484962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Sophie Rodriguez",
+                "comment": "The wild orchid in this painting is mesmerizing! It's a captivating portrayal of the delicate beauty of nature.",
+                "likes": 5,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "1",
+                "name": "Emma White",
+                "comment": "There's something so serene about this orchid in this painting. It's like a moment of stillness and contemplation captured on canvas.",
+                "likes": 2,
+                "timestamp": 1710384962000
+            },
+            {
+                "id": "2",
+                "name": "Ryan Martinez",
+                "comment": "The simplicity of this painting is its greatest strength. This beautiful orchid invites you to appreciate its beauty in all its quiet glory. It's truly enchanting.",
+                "likes": 9,
+                "timestamp": 1710284962000
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Hand Sketch",
+        "medium": "Pencil sketch",
+        "image": "http://localhost:8080/images/image-6.jpg",
+        "description": "This pencil sketch shows a simple drawing of a hand. It's a basic yet detailed representation of a human hand, capturing its shape and features. Each line and shading adds depth and dimension to the sketch, making it an interesting study in form and texture.",
+        "likes": "102",
+        "timestamp": 1710284962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Ethan Johnson",
+                "comment": "This sketch beautifully portrays the details of a hand! It's a great example of capturing realistic features with pencil.",
+                "likes": 8,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "1",
+                "name": "Sophia Martinez",
+                "comment": "I like how this sketch focuses on simplicity. It's a great starting point for learning to draw.",
+                "likes": 5,
+                "timestamp": 1710384962000
+            },
+            {
+                "id": "2",
+                "name": "Liam Brown",
+                "comment": "This sketch reminds me of practicing drawing hands in art class. It's a skillful representation!",
+                "likes": 5,
+                "timestamp": 1710284962000
+            },
+            {
+                "id": "3",
+                "name": "Ava Thompson",
+                "comment": "The detail in this sketch is impressive! It's like seeing a hand come to life on paper.",
+                "likes": 9,
+                "timestamp": 1710184962000
+            },
+            {
+                "id": "4",
+                "name": "Noah White",
+                "comment": "I appreciate the effort put into capturing the intricacies of a hand. It's a wonderful study in pencil drawing.",
+                "likes": 7,
+                "timestamp": 1710284962000
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Winter Village",
+        "medium": "Acrylic on canvas",
+        "image": "http://localhost:8080/images/image-7.jpg",
+        "description": "This painting depicts a snowy winter village nestled among mountains. Snow-covered rooftops and trees are dusted with snow create a cozy atmosphere. It feels like you're stepping into a quiet winter wonderland, where the air is crisp and everything is serene.",
+        "likes": "231",
+        "timestamp": 1710084962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Liam Smith",
+                "comment": "This painting transports me to a snowy winter village! It captures the magic of winter with its cozy atmosphere and snow-covered landscape.",
+                "likes": 8,
+                "timestamp": 1710384962000
+            },
+            {
+                "id": "1",
+                "name": "Ava Martinez",
+                "comment": "I love the tranquil feeling of this painting! The snowy village scene is so serene and inviting. It's like a peaceful escape from the busyness of everyday life.",
+                "likes": 9,
+                "timestamp": 1711073611233
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "title": "Sunflowers and Vase",
+        "medium": "Watercolor on paper",
+        "image": "http://localhost:8080/images/image-8.jpg",
+        "description": "This painting features a bouquet of sunflowers in a vase, bringing a burst of color and warmth to the room. The vibrant yellow petals stand out against the backdrop, creating a cheerful atmosphere. It's like bringing a piece of sunshine indoors, filling the space with joy and happiness.",
+        "likes": "385",
+        "timestamp": 1710084962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Liam Roberts",
+                "comment": "I'm reminded of sunny days in the countryside with this painting! The sunflowers are so cheerful and vibrant, brightening up the room and lifting my spirits.",
+                "likes": 8,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "1",
+                "name": "Sophia Martinez",
+                "comment": "I love the warmth and beauty of this painting! The sunflowers in the vase add a touch of nature's beauty to any space. It's like having a piece of summer in your home.",
+                "likes": 5,
+                "timestamp": 1710384962000
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "title": "Bluebird and Cherry Blossoms",
+        "medium": "Acrylic on canvas",
+        "image": "http://localhost:8080/images/image-9.jpg",
+        "description": "This painting shows a lovely picture of a bluebird sitting on a tree branch covered in pretty cherry blossoms. The bird's feathers shine with shades of blue, making the scene more colorful and peaceful. The cherry blossoms are white and look very beautiful, making a nice background against the blue sky. It's a peaceful and beautiful moment captured with paint on canvas.",
+        "likes": "214",
+        "timestamp": 1710084962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Emily Johnson",
+                "comment": "Wow! This painting is stunning! The bird and flowers are so pretty together.",
+                "likes": 4,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "1",
+                "name": "Michael Smith",
+                "comment": "I really like this painting! It makes me happy to look at the bird and flowers.",
+                "likes": 8,
+                "timestamp": 1710384962000
+            },
+            {
+                "id": "2",
+                "name": "Sophia Lee",
+                "comment": "This painting is wonderful! It feels like I'm in a peaceful garden with the bird and flowers.",
+                "likes": 6,
+                "timestamp": 1710284962000
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "title": "Misty Mountain Woods",
+        "medium": "Acrylic on canvas",
+        "image": "http://localhost:8080/images/image-10.jpg",
+        "description": "This painting is about a peaceful scene in the woods with a foggy mountain. It's painted with acrylics on canvas. The mist covers the mountain, making it hard to see, which adds mystery and calmness. The fog is so thick that you can barely see the pine trees. Even though it's hard to see everything clearly, the scene feels very peaceful, like being in a quiet forest.",
+        "likes": "100",
+        "timestamp": 1710084962000,
+        "comments": [
+            {
+                "id": "0",
+                "name": "Sarah Thompson",
+                "comment": "The way you've captured the ethereal beauty of the misty woods is simply mesmerizing! It feels like stepping into a dream world where the boundary between reality and imagination blurs. Stunning work!",
+                "likes": 2,
+                "timestamp": 1710884962000
+            },
+            {
+                "id": "1",
+                "name": "Jack Wilson",
+                "comment": "I'm captivated by the sense of serenity and solitude emanating from this painting. The fog adds an almost mystical quality to the scene, making it feel like a secret haven tucked away from the rest of the world. Truly breathtaking!",
+                "likes": 3,
+                "timestamp": 1710784962000
+            },
+            {
+                "id": "2",
+                "name": "Emma Garcia",
+                "comment": "Your use of acrylics to portray the interplay between light and shadow amidst the mist is absolutely masterful! It evokes a sense of wonder and curiosity, compelling viewers to lose themselves in the enchanting depths of the forest. I can't wait to see more of your evocative artworks!",
+                "likes": 5,
+                "timestamp": 1710684962000
+            }
+        ]
+    }
+]
