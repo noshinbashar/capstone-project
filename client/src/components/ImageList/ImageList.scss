@@ -8,13 +8,11 @@
 
     @include tablet {
         padding-top: 0%;
-        // display: flex;
-        // justify-content: center;
     }
 
     @include desktop {
         // padding-top: 10%;
-        border-left: 1px solid $Mercury;
+        // border-left: 1px solid $Mercury;
     }
 
     &__title {
@@ -50,7 +48,6 @@
     &__images {
         width: 90%;
         padding: 5%;
-        // box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
         transition: transform 0.3s ease;
 
         &:hover {

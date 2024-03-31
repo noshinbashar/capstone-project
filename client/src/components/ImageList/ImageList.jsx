@@ -11,7 +11,7 @@ function ImageList({ Imagelist, selectedImage }) {
                         .filter((images) => (images.id) !== selectedImage.id)
                         .map((images) => {
                             return (
-                                <Link to={`/mygallery/${images.id}`} className="link">    {/* adding this className to remove text decoration  */}
+                                <Link to={`/mygallery/${images.id}`} className="link">
                                     <li className="imagelist__item" >
                                         <img className="imagelist__images" src={`${images.image}`} alt="image List"></img>
                                     </li>
@@ -21,6 +21,7 @@ function ImageList({ Imagelist, selectedImage }) {
                         })}
                 </ul>
             </div>
+
         </>
     )
 }
