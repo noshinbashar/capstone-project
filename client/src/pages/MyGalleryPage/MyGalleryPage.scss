@@ -17,5 +17,9 @@
 .itemtwo {
   @include desktop {
     width: 40%;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 20px);
+    overflow-y: auto;
   }
 }
