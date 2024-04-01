@@ -10,11 +10,6 @@
         padding-top: 0%;
     }
 
-    @include desktop {
-        // padding-top: 10%;
-        // border-left: 1px solid $Mercury;
-    }
-
     &__title {
         font-size: 20px;
         font-weight: 700;
@@ -90,12 +85,12 @@
         transition: transform 0.3s ease;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
 
         @include tablet {
-            width: 150px;
-            height: 150px;
+            width: 8rem;
+            height: 8rem;
             margin: 0% 10%;
         }
     }
@@ -103,38 +98,106 @@
     &__box {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         gap: 0.5rem;
+        margin-bottom: 5rem;
     }
 
     &__title {
-        width: 20rem;
+        width: 15rem;
         padding: 0.5rem;
-        border: 1px solid #ccc;
+        border: 1px solid $Mercury;
         border-radius: 5px;
+        border: transparent;
+        outline: none;
+        background-color: $Alabaster;
+
+        &::placeholder {
+            color: $BrushBeat-Blue;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 1.5px solid $BrushBeat-Blue;
+            background-color: $Mercury;
+        }
+
+        @include tablet {
+            width: 20rem;
+        }
     }
 
     &__medium {
-        width: 20rem;
+        width: 15rem;
         padding: 0.5rem;
-        border: 1px solid #ccc;
+        border: 1px solid $Mercury;
         border-radius: 5px;
+        border: transparent;
+        outline: none;
+        background-color: $Alabaster;
+
+        &::placeholder {
+            color: $BrushBeat-Blue;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 1.5px solid $BrushBeat-Blue;
+            background-color: $Mercury;
+        }
+
+        @include tablet {
+            width: 20rem;
+        }
     }
 
     &__description {
-        width: 20rem;
-        height: 4rem;
+        width: 15rem;
+        height: 5rem;
         padding: 0.5rem;
-        border: 1px solid #ccc;
+        border: 1px solid $Mercury;
         border-radius: 5px;
+        border: transparent;
+        outline: none;
+        background-color: $Alabaster;
+
+        &::placeholder {
+            color: $BrushBeat-Blue;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 1.5px solid $BrushBeat-Blue;
+            background-color: $Mercury;
+        }
+
+        @include tablet {
+            width: 20rem;
+        }
     }
 
+    &__button {
+        width: 5rem;
+        padding: 0.5rem;
+        border: 1px solid $Mercury;
+        border-radius: 5px;
 
-    @include desktop {
-        // margin: 0 1rem;
+        background-color: $BrushBeat-DarkBlue;
+        border: none;
+        color: $White;
+        font-weight: 600;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            background-color: darken($BrushBeat-DarkBlue, 10%);
+        }
+
+        &:active {
+            background-color: lighten($BrushBeat-DarkBlue, 10%);
+            box-shadow: none;
+        }
     }
-
-
 
     &__input {
         display: none;

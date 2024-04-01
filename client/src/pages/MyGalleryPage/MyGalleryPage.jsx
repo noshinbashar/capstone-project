@@ -64,6 +64,10 @@ function MyGalleryPage() {
     }
   }
 
+  const handleImageUpload = (newImage) => {
+    setImagelist([...imagelist, newImage]);
+  };
+
 
   return (
     <>
@@ -77,8 +81,7 @@ function MyGalleryPage() {
           </div>
 
           <div className="itemtwo">
-            <ImageList Imagelist={imagelist} selectedImage={selectedImage} />
-            {/* <Upload /> */}
+            <ImageList Imagelist={imagelist} selectedImage={selectedImage} onImageUpload={handleImageUpload} />
           </div>
         </div>
 

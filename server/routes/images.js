@@ -10,7 +10,8 @@ router.get("/", (req, res) => {
     res.status(200).send(images);
   });
 
- // Get selected image by ID
+//-------------------------------- GET SELECTED IMAGE ---------------------------------------------
+
  router.get("/:imagesId", (req, res) => {
 
     const { imagesId } = req.params;
@@ -27,8 +28,8 @@ router.get("/", (req, res) => {
     res.status(200).send(selectedImage);
   });
 
+//-------------------------------- GET COMMENTS FOR SELECTED IMAGE  ---------------------------------------------
 
-  // Get comments for a selected image
 router.get("/:id/comments", (req, res) => {
     const imageId = req.params.id;
   
@@ -48,7 +49,8 @@ router.get("/:id/comments", (req, res) => {
     }
   });
 
-  // Post a new comment for selected image
+  //-------------------------------- POST COMMENT ---------------------------------------------
+
 router.post("/:imageId/comments", (req, res) => {
     const imageId = req.params.imageId;
   
@@ -81,8 +83,8 @@ router.post("/:imageId/comments", (req, res) => {
     }
   });
 
+ //-------------------------------- DELETE COMMENT ---------------------------------------------
 
-// Delete a comment for selected image
 router.delete("/:imageId/comments/:commentId", (req, res) => {
     const imageId = req.params.imageId;
     const commentId = req.params.commentId;
@@ -108,6 +110,42 @@ router.delete("/:imageId/comments/:commentId", (req, res) => {
     } 
   
   });
-  
+
+  //-------------------------------- UPLOAD IMAGE ---------------------------------------------
+
+  const imagesFilePath = "./data/images.json";
+
+router.post("/upload", (req, res) => {
+    const { title, medium, description } = req.body;
+    const imageFile = req.files.image;
+    // Generate a unique filename for the image
+    const imageName = uuidv4() + imageFile.name.substring(imageFile.name.lastIndexOf('.'));
+
+    imageFile.mv(`./public/images/${imageName}`, (error) => {
+        if (error) {
+            console.error('Error uploading image:', error);
+            return res.status(500).send('Error uploading image');
+        }
+
+        const newImage = {
+            id: uuidv4(),
+            image: `http://localhost:8080/images${imageName}`, 
+            title,
+            medium,
+            description,
+            comments: [] 
+        };
+        // Read existing images from JSON file
+        const imagesJSON = fs.readFileSync(imagesFilePath);
+        const images = JSON.parse(imagesJSON);
+
+   
+        images.push(newImage);
+
+        fs.writeFileSync(imagesFilePath, JSON.stringify(images));
+
+        res.status(201).json(newImage);
+    });
+}); 
 
   module.exports = router;

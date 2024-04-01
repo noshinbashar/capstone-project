@@ -1,5 +1,4 @@
 import "./PostComment.scss"
-// import addComment from "../../assets/icons/add_comment.svg"
 import { useState } from "react"
 
 function PostComment({ selectedImage, postComment }) {
