@@ -39,8 +39,6 @@ function ImageDetails({ selectedImage }) {
             <p>Posted on {formatDate(selectedImage.timestamp)}</p>
           </div>
 
-
-
         </div>
 
       </div>
