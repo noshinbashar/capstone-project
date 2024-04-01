@@ -39,16 +39,6 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
         console.log(formData)
         console.log(imageName)
 
-
-        // if (image) {
-        //     const formData = new FormData();
-        //     formData.append('image', image);
-        //     formData.append('title', newTitle);
-        //     formData.append('medium', newMedium);
-        //     formData.append('description', newDescription);
-
-        //     console.log(formData)
-
         try {
             const response = await axios.post(`http://localhost:8080/images/upload`, formData, {
                 headers: {
@@ -60,21 +50,6 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
             console.error('Error uploading image:', error);
         }
     }
-
-
-
-    // const handleImageChange = (event) => {
-    //     const file = event.target.files[0];
-    //     // setImage(file);
-    // };
-
-    useEffect(() => {
-        const handleImageClick = () => {
-            inputRef.current.click();
-        };
-
-
-    }, []);
 
     return (
         <>
