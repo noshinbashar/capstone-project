@@ -24,17 +24,20 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
 
         event.preventDefault()
         let image = event.target.image.files[0]
-
+        let imageName = event.target.image.files[0].name
         let title = event.target.title.value
         let medium = event.target.medium.value
         let description = event.target.description.value
 
         const formData = {
+            image: image,
+            imageName: imageName,
             title: title,
             medium: medium,
             description: description
         }
         console.log(formData)
+        console.log(imageName)
 
 
         // if (image) {

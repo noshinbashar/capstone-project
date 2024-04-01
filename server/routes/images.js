@@ -3,6 +3,17 @@ const router = express.Router();
 const fs = require("fs");
 const { v4: uuidv4 } = require('uuid');
 
+const multer =  require('multer')
+const storage = multer.diskStorage({
+  destination:(req,file,cb)=>{
+    cb(null, 'public/images');
+  },
+  filename:(req,file,cb) =>{
+    cb(null,file.originalname)
+  }
+})
+const upload = multer({storage:storage})
+
 router.get("/", (req, res) => {
     const imagesJSON = fs.readFileSync("./data/images.json");
     const images = JSON.parse(imagesJSON);
@@ -15,7 +26,6 @@ router.get("/", (req, res) => {
  router.get("/:imagesId", (req, res) => {
 
     const { imagesId } = req.params;
-    console.log("params: ", imagesId);
   
     // Read image data from JSON file
     const imagesJSON = fs.readFileSync("./data/images.json");
@@ -113,48 +123,28 @@ router.delete("/:imageId/comments/:commentId", (req, res) => {
 
   //-------------------------------- UPLOAD IMAGE ---------------------------------------------
 
-  const imagesFilePath = "./data/images.json";
 
-router.post("/upload", (req, res) => {
-  console.log(req.body)
-  try {
-    // const { title, medium, description } = req.body;
-    // const imageFile = req.files.image;
-    // // Generate a unique filename for the image
-    // const imageName = uuidv4() + imageFile.name.substring(imageFile.name.lastIndexOf('.'));
-
-    // imageFile.mv(`./public/images/${imageName}`, (error) => {
-    //     if (error) {
-    //         console.error('Error uploading image:', error);
-    //         return res.status(500).send('Error uploading image');
-    //     }
-
-    //     const newImage = {
-    //         id: uuidv4(),
-    //         image: `http://localhost:8080/images${imageName}`, 
-    //         title,
-    //         medium,
-    //         description,
-    //         comments: [] 
-    //     };
-    //     // Read existing images from JSON file
-    //     const imagesJSON = fs.readFileSync(imagesFilePath);
-    //     const images = JSON.parse(imagesJSON);
-
-   
-    //     images.push(newImage);
-
-    //     fs.writeFileSync(imagesFilePath, JSON.stringify(images));
-
-    //     res.status(201).json(newImage);
-    // });
-
-    res.send("succes")
-  } catch (error){
-    res.status(500).send("error passing the data")
-
-  }
-    
-}); 
+  router.post("/upload", upload.single('image'),(req, res) => {
+    try{
+      const imageListJson = fs.readFileSync("./data/images.json")
+      const imageList = JSON.parse(imageListJson)
+      const newImage = {
+        id : uuidv4(),
+        title : req.body.title,
+        medium : req.body.medium,
+        image: `http://localhost:8080/images/${req.body.imageName}`,
+        // image: req.body.imageName,
+        description : req.body.description,
+        likes : '0',
+        timestamp : Date.now(),
+        comments: []
+      };
+      imageList.push(newImage)
+      fs.writeFileSync('./data/images.json', JSON.stringify(imageList))
+        res.status(201).json({message:'Image upload success'})
+    }catch(error){
+      res.status(500).json({error:"Image upload fail"})
+    }
+  });
 
   module.exports = router;
