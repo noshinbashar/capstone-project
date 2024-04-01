@@ -116,36 +116,45 @@ router.delete("/:imageId/comments/:commentId", (req, res) => {
   const imagesFilePath = "./data/images.json";
 
 router.post("/upload", (req, res) => {
-    const { title, medium, description } = req.body;
-    const imageFile = req.files.image;
-    // Generate a unique filename for the image
-    const imageName = uuidv4() + imageFile.name.substring(imageFile.name.lastIndexOf('.'));
+  console.log(req.body)
+  try {
+    // const { title, medium, description } = req.body;
+    // const imageFile = req.files.image;
+    // // Generate a unique filename for the image
+    // const imageName = uuidv4() + imageFile.name.substring(imageFile.name.lastIndexOf('.'));
 
-    imageFile.mv(`./public/images/${imageName}`, (error) => {
-        if (error) {
-            console.error('Error uploading image:', error);
-            return res.status(500).send('Error uploading image');
-        }
+    // imageFile.mv(`./public/images/${imageName}`, (error) => {
+    //     if (error) {
+    //         console.error('Error uploading image:', error);
+    //         return res.status(500).send('Error uploading image');
+    //     }
 
-        const newImage = {
-            id: uuidv4(),
-            image: `http://localhost:8080/images${imageName}`, 
-            title,
-            medium,
-            description,
-            comments: [] 
-        };
-        // Read existing images from JSON file
-        const imagesJSON = fs.readFileSync(imagesFilePath);
-        const images = JSON.parse(imagesJSON);
+    //     const newImage = {
+    //         id: uuidv4(),
+    //         image: `http://localhost:8080/images${imageName}`, 
+    //         title,
+    //         medium,
+    //         description,
+    //         comments: [] 
+    //     };
+    //     // Read existing images from JSON file
+    //     const imagesJSON = fs.readFileSync(imagesFilePath);
+    //     const images = JSON.parse(imagesJSON);
 
    
-        images.push(newImage);
+    //     images.push(newImage);
 
-        fs.writeFileSync(imagesFilePath, JSON.stringify(images));
+    //     fs.writeFileSync(imagesFilePath, JSON.stringify(images));
 
-        res.status(201).json(newImage);
-    });
+    //     res.status(201).json(newImage);
+    // });
+
+    res.send("succes")
+  } catch (error){
+    res.status(500).send("error passing the data")
+
+  }
+    
 }); 
 
   module.exports = router;

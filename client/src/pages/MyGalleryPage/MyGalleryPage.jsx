@@ -27,7 +27,7 @@ function MyGalleryPage() {
 
   async function getSelectedImage(imageId) {
     const response = await axios.get(`http://localhost:8080/images/${imageId}`)
-    console.log(response.data)
+    // console.log(response.data)
     setSelectedImage(response.data)
     setImageComments(response.data.comments)
   }

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
 import UploadImage from "./../../assets/icons/upload.png";
 import "./ImageList.scss";
+import axios from "axios";
 
 function ImageList({ Imagelist, selectedImage, onImageUpload }) {
     const inputRef = useRef(null);
@@ -19,41 +20,57 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
         setImage(file);
     };
 
-    const handleUploadImage = async () => {
-        if (image) {
-            const formData = new FormData();
-            formData.append('image', image);
-            formData.append('title', newTitle);
-            formData.append('medium', newMedium);
-            formData.append('description', newDescription);
+    const handleUploadImage = async (event) => {
 
-            try {
-                const response = await fetch('/upload', {
-                    method: 'POST',
-                    body: formData
-                });
+        event.preventDefault()
+        let image = event.target.image.files[0]
 
-                if (response.ok) {
-                    const updatedImage = await response.json();
-                    onImageUpload(updatedImage);
-                } else {
-                    console.error('Failed to upload image');
-                }
-            } catch (error) {
-                console.error('Error uploading image:', error);
-            }
+        let title = event.target.title.value
+        let medium = event.target.medium.value
+        let description = event.target.description.value
+
+        const formData = {
+            title: title,
+            medium: medium,
+            description: description
         }
-    };
+        console.log(formData)
+
+
+        // if (image) {
+        //     const formData = new FormData();
+        //     formData.append('image', image);
+        //     formData.append('title', newTitle);
+        //     formData.append('medium', newMedium);
+        //     formData.append('description', newDescription);
+
+        //     console.log(formData)
+
+        try {
+            const response = await axios.post(`http://localhost:8080/images/upload`, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            })
+            console.log(response)
+        } catch (error) {
+            console.error('Error uploading image:', error);
+        }
+    }
+
+
+
+    // const handleImageChange = (event) => {
+    //     const file = event.target.files[0];
+    //     // setImage(file);
+    // };
 
     useEffect(() => {
         const handleImageClick = () => {
             inputRef.current.click();
         };
 
-        const handleImageChange = (event) => {
-            const file = event.target.files[0];
-            setImage(file);
-        };
+
     }, []);
 
     return (
@@ -75,26 +92,26 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
                         })}
                 </ul>
             </div>
-
+            {/* ------------------------------------- Upload ---------------------------------------- */}
             <div className="upload">
                 <p className="images__title">Upload Art Work</p>
-                <div className="upload__box">
+                <form onSubmit={handleUploadImage} className="upload__box">
                     <div onClick={handleImageClick}>
                         {image ? (
                             <img src={URL.createObjectURL(image)} alt="" />
                         ) : (
                             <img className="upload__image" src={UploadImage} alt="" />
                         )}
-                        <input type="file" ref={inputRef} onChange={handleImageChange} className="upload__input" />
+                        <input type="file" ref={inputRef} onChange={handleImageChange} name="image" accept="image/*" className="upload__input" />
                     </div>
-                    <input className="upload__title" type="text" placeholder="Title" value={newTitle}
+                    <input className="upload__title" type="text" placeholder="Title" name="title" value={newTitle}
                         onChange={(e) => setNewTitle(e.target.value)} />
-                    <input className="upload__medium" type="text" placeholder="medium" value={newMedium}
+                    <input className="upload__medium" type="text" placeholder="medium" name="medium" value={newMedium}
                         onChange={(e) => setNewMedium(e.target.value)} />
-                    <input className="upload__description" type="text" placeholder="description" value={newDescription}
+                    <input className="upload__description" type="text" placeholder="description" name="description" value={newDescription}
                         onChange={(e) => setNewDescription(e.target.value)} />
-                    <button className="upload__button" onClick={handleUploadImage}>Upload</button>
-                </div>
+                    <button className="upload__button" type="submit">Upload</button>
+                </form>
 
             </div>
         </>
