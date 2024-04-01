@@ -3,6 +3,7 @@ import ImageDetails from "../../components/ImageDetails/ImageDetails";
 import PostComment from "../../components/PostComment/PostComment";
 import Comments from "../../components/Comments/Comments";
 import ImageList from "../../components/ImageList/ImageList";
+// import Upload from "../../components/Upload/Upload"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios"
@@ -63,6 +64,10 @@ function MyGalleryPage() {
     }
   }
 
+  const handleImageUpload = (newImage) => {
+    setImagelist([...imagelist, newImage]);
+  };
+
 
   return (
     <>
@@ -76,7 +81,7 @@ function MyGalleryPage() {
           </div>
 
           <div className="itemtwo">
-            <ImageList Imagelist={imagelist} selectedImage={selectedImage} />
+            <ImageList Imagelist={imagelist} selectedImage={selectedImage} onImageUpload={handleImageUpload} />
           </div>
         </div>
 

@@ -16,6 +16,7 @@
 
 .itemtwo {
   @include desktop {
+    border-left: 1px solid $Mercury;
     width: 40%;
     position: sticky;
     top: 0;
