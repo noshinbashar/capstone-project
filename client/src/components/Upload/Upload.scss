@@ -1,17 +1,17 @@
-@use "../../styles/partials/variables" as *;
-@use "../../styles/partials/global" as *;
-@use "../../styles/partials/fonts" as *;
+// @use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/global" as *;
+// @use "../../styles/partials/fonts" as *;
 
-.upload {
-    margin: 0 10rem;
-    margin-bottom: 10rem;
+// .upload {
+//     margin: 0 10rem;
+//     margin-bottom: 10rem;
 
-    @include desktop {
-        margin: 0 5rem;
-    }
+//     @include desktop {
+//         margin: 0 5rem;
+//     }
 
-    &__input {
-        display: none;
-    }
+//     &__input {
+//         display: none;
+//     }
 
-}
+// }
