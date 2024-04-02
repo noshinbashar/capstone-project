@@ -29,16 +29,6 @@
 }
 
 .gallery {
-    // margin: 5%;
-    // margin-bottom: 0%;
-    // padding-bottom: 0%;
-    // width: 90%;
-    // // background-color: $Mercury ;
-
-    // @include tablet {
-    //     width: 50%;
-    //     margin: 0 25%;
-    // }
 
     &__title-box {
         display: flex;
@@ -53,6 +43,11 @@
         color: $BrushBeat-Black;
         font-size: 20px;
         font-weight: 700;
+        margin-top: 1%;
+
+        @include desktop {
+            margin-top: 8%;
+        }
     }
 
     &__description {
@@ -67,6 +62,11 @@
         color: $BrushBeat-Black;
         font-size: 14px;
         font-weight: 600;
+        margin-top: 1%;
+
+        @include desktop {
+            margin-top: 8%;
+        }
     }
 
     &__name {
@@ -130,16 +130,6 @@
 }
 
 .galleryComment {
-    // margin: 5%;
-    // margin-bottom: 0%;
-    // padding-bottom: 0%;
-    // width: 90%;
-
-    // @include tablet {
-    //     width: 50%;
-    //     margin: 0 25%;
-    // }
-
     &__box {
         @include tablet {
             padding: 0 5%;
@@ -225,16 +215,6 @@
 
 
 .gallery-comments {
-    // margin: 5%;
-    // margin-bottom: 0%;
-    // padding-bottom: 0%;
-    // width: 90%;
-
-    // @include tablet {
-    //     width: 50%;
-    //     margin: 0 25%;
-    // }
-
     &__box {
         padding-inline-start: 0%;
         border-bottom: 1px solid $White;

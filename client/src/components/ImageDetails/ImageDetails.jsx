@@ -57,7 +57,7 @@ function ImageDetails({ selectedImage }) {
           </div>
 
           <div className="data__time">
-            <p>Posted on {formatDate(selectedImage.timestamp)}</p>
+            <p>Posted {formatDate(selectedImage.timestamp)}</p>
           </div>
 
         </div>
