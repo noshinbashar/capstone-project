@@ -76,41 +76,48 @@
 .upload {
     padding: 5%;
 
-    &__image {
-        width: 150px;
-        height: 150px;
-        margin: 0% 10%;
-
-        padding: 5%;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        @include tablet {
-            width: 8rem;
-            height: 8rem;
-            margin: 0% 10%;
-        }
-    }
 
     &__box {
+        //---------------------------------------------main box
+        margin-bottom: 10rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
-        margin-bottom: 5rem;
+
+        @include tablet {
+            gap: 1rem;
+        }
+
+        @include desktop {
+            gap: 0.5rem;
+        }
     }
 
+    &__image {
+        //---------------------------------------------upload image 
+        width: 90%;
+        margin: 0 5%;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            border: 1.5px solid $Mercury;
+        }
+    }
+
+
     &__title {
-        width: 15rem;
+        //-------------------------------------------------title placeholder
+        width: 90%;
         padding: 0.5rem;
         border: 1px solid $Mercury;
         border-radius: 5px;
         border: transparent;
         outline: none;
         background-color: $Alabaster;
+        font-size: 14px;
 
         &::placeholder {
             color: $BrushBeat-Blue;
@@ -120,18 +127,16 @@
         &:not(:placeholder-shown) {
             border: 1.5px solid $BrushBeat-Blue;
             background-color: $Mercury;
-        }
-
-        @include tablet {
-            width: 20rem;
         }
     }
 
     &__medium {
-        width: 15rem;
+        //-------------------------------------------------medium placeholder
+        width: 90%;
         padding: 0.5rem;
         border: 1px solid $Mercury;
         border-radius: 5px;
+        font-size: 14px;
         border: transparent;
         outline: none;
         background-color: $Alabaster;
@@ -144,19 +149,17 @@
         &:not(:placeholder-shown) {
             border: 1.5px solid $BrushBeat-Blue;
             background-color: $Mercury;
-        }
-
-        @include tablet {
-            width: 20rem;
         }
     }
 
     &__description {
-        width: 15rem;
+        //-------------------------------------------------description placeholder
+        width: 90%;
         height: 5rem;
         padding: 0.5rem;
         border: 1px solid $Mercury;
         border-radius: 5px;
+        font-size: 14px;
         border: transparent;
         outline: none;
         background-color: $Alabaster;
@@ -169,10 +172,6 @@
         &:not(:placeholder-shown) {
             border: 1.5px solid $BrushBeat-Blue;
             background-color: $Mercury;
-        }
-
-        @include tablet {
-            width: 20rem;
         }
     }
 

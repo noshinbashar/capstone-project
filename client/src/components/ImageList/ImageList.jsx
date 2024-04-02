@@ -78,7 +78,7 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
                 <form onSubmit={handleUploadImage} className="upload__box">
                     <div onClick={handleImageClick}>
                         {image ? (
-                            <img src={URL.createObjectURL(image)} alt="" />
+                            <img className="upload__image" src={URL.createObjectURL(image)} alt="" />
                         ) : (
                             <img className="upload__image" src={UploadImage} alt="" />
                         )}
@@ -86,9 +86,9 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
                     </div>
                     <input className="upload__title" type="text" placeholder="Title" name="title" value={newTitle}
                         onChange={(e) => setNewTitle(e.target.value)} />
-                    <input className="upload__medium" type="text" placeholder="medium" name="medium" value={newMedium}
+                    <input className="upload__medium" type="text" placeholder="Art medium" name="medium" value={newMedium}
                         onChange={(e) => setNewMedium(e.target.value)} />
-                    <input className="upload__description" type="text" placeholder="description" name="description" value={newDescription}
+                    <input className="upload__description" type="text" placeholder="Write dscription here" name="description" value={newDescription}
                         onChange={(e) => setNewDescription(e.target.value)} />
                     <button className="upload__button" type="submit">Upload</button>
                 </form>
