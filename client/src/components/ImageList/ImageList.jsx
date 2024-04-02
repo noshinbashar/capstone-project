@@ -46,6 +46,8 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
                 },
             })
             console.log(response)
+            // Refresh the page after successful upload
+            window.location.reload()
         } catch (error) {
             console.error('Error uploading image:', error);
         }
