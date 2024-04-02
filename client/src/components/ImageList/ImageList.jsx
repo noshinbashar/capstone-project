@@ -36,8 +36,6 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
             medium: medium,
             description: description
         }
-        console.log(formData)
-        console.log(imageName)
 
         try {
             const response = await axios.post(`http://localhost:8080/images/upload`, formData, {
@@ -46,6 +44,8 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
                 },
             })
             console.log(response)
+            // Refresh the page after successful upload
+            window.location.reload()
         } catch (error) {
             console.error('Error uploading image:', error);
         }
