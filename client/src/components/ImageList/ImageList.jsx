@@ -36,8 +36,6 @@ function ImageList({ Imagelist, selectedImage, onImageUpload }) {
             medium: medium,
             description: description
         }
-        console.log(formData)
-        console.log(imageName)
 
         try {
             const response = await axios.post(`http://localhost:8080/images/upload`, formData, {
