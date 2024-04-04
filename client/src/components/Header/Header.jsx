@@ -22,7 +22,7 @@ function Header() {
                 <ul className={menuOpen ? "open" : "nav"}>
                     <li className="nav__list"> <NavLink className="nav__link" to="/about">About</NavLink></li>
                     <li className="nav__list"> <NavLink className="nav__link" to="/gallery">Gallery</NavLink></li>
-                    <li className="nav__list"> <NavLink className="nav__link" to="/mygallery">My Gallery</NavLink></li>
+                    <li className="nav__list"> <NavLink className="nav__link" to="/login">My Gallery</NavLink></li>
                 </ul>
             </div>
 

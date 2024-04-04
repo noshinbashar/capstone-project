@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-title {
+    font-size: 20px;
+    color: $BrushBeat-DarkBlue;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.login-form {
+    background-color: $White;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: $BrushBeat-DarkBlue;
+    color: $White;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($BrushBeat-DarkBlue, 10%);
+    }
+
+    &:active {
+        background-color: lighten($BrushBeat-DarkBlue, 10%);
+        box-shadow: none;
+    }
+}
+
+.register-title {
+    font-size: 14px;
+    color: $BrushBeat-Black;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
