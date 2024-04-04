@@ -55,11 +55,54 @@
     }
 }
 
-.register-title {
+.register-text {
     font-size: 14px;
     color: $BrushBeat-Black;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 20px;
+}
 
+.span-text {
+    cursor: pointer;
+    color: $BrushBeat-DarkBlue;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.register {
+    display: none;
+    background-color: $White;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    // margin-top: 20px;
+}
+
+.register.active {
+    display: block;
+    border-bottom: none;
+}
+
+.register-title {
+    font-size: 20px;
+    color: $BrushBeat-DarkBlue;
+    text-align: center;
+    font-weight: 600;
+    // margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+.register-item {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    color: $BrushBeat-Black;
+    margin-bottom: 5px;
 }
