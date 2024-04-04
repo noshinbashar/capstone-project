@@ -28,7 +28,7 @@ function Login() {
             <div className="login-form-container">
 
                 <form onSubmit={handleSubmit} className="login-form">
-                    <p className="login-title">Please log in to enter My Gallery</p>
+                    <p className="login-title">Log in to explore the world of art</p>
                     <input
                         type="text"
                         placeholder="Username"
@@ -43,7 +43,7 @@ function Login() {
                         onChange={handlePasswordChange}
                         className="input-field"
                     />
-                    <Link to="/mygallery">
+                    <Link to="/logopage">
                         <button type="submit" className="submit-btn">
                             Login
                         </button>
