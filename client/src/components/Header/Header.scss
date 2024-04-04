@@ -2,9 +2,9 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/fonts" as *;
 
-.active {
-    border-bottom: 2px solid $BrushBeat-Black;
-}
+// .active {
+//     border-bottom: 2px solid $BrushBeat-Black;
+// }
 
 .logo {
     &__image {
@@ -67,7 +67,7 @@
         }
 
 
-        &:not(.active):hover {
+        &:hover {
             border-bottom: 2px solid $BrushBeat-Black;
         }
     }
