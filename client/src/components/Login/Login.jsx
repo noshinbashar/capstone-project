@@ -25,76 +25,79 @@ function Login() {
 
     return (
         <>
-            <div className="login-form-container">
+            <div className="login-Page">
+                <div className="login-form-container">
 
-                <form onSubmit={handleSubmit} className="login-form">
-                    <p className="login-title">Please log in to enter My Gallery</p>
-                    <input
-                        type="text"
-                        placeholder="Username"
-                        value={username}
-                        onChange={handleUsernameChange}
-                        className="input-field"
-                    />
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={handlePasswordChange}
-                        className="input-field"
-                    />
-                    <Link to="/mygallery">
-                        <button type="submit" className="submit-btn">
-                            Login
-                        </button>
-                    </Link>
-                    <p className="register-text">New to our community? <span className="span-text" onClick={toggleRegister}>Register here</span></p>
+                    <form onSubmit={handleSubmit} className="login-form">
+                        <p className="login-title">Login</p>
+                        <p className="register-text">Please enter your username and password!</p>
+                        <input
+                            type="text"
+                            placeholder="Username"
+                            value={username}
+                            onChange={handleUsernameChange}
+                            className="input-field"
+                        />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={handlePasswordChange}
+                            className="input-field"
+                        />
+                        <Link to="/logopage">
+                            <button type="submit" className="submit-btn">
+                                Login
+                            </button>
+                        </Link>
+                        <p className="register-text">New to our community? <span className="span-text" onClick={toggleRegister}>Register here</span></p>
 
-                    <div className={`register ${showRegister ? 'active' : ''}`}>
-                        <p className="register-title">Register</p>
-                        <div className="register-item">
-                            <label className="label">Username:</label>
-                            <input
-                                type="text"
-                                id="username"
-                                name="username"
-                                className="input-field"
-                                required
-                            />
+                        <div className={`register ${showRegister ? 'active' : ''}`}>
+                            <p className="register-title">Register</p>
+                            <div className="register-item">
+                                <label className="label">Username:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    className="input-field"
+                                    required
+                                />
+                            </div>
+                            <div className="register-item">
+                                <label className="label">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="input-field"
+                                    required
+                                />
+                            </div>
+                            <div className="register-item">
+                                <label className="label">Password:</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    className="input-field"
+                                    required
+                                />
+                            </div>
+                            <div className="register-item">
+                                <label className="label">Confirm Password:</label>
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    className="input-field"
+                                    required
+                                />
+                            </div>
+                            <button className="submit-btn" type="submit">Register</button>
                         </div>
-                        <div className="register-item">
-                            <label className="label">Email:</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                className="input-field"
-                                required
-                            />
-                        </div>
-                        <div className="register-item">
-                            <label className="label">Password:</label>
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                className="input-field"
-                                required
-                            />
-                        </div>
-                        <div className="register-item">
-                            <label className="label">Confirm Password:</label>
-                            <input
-                                type="password"
-                                id="confirmPassword"
-                                name="confirmPassword"
-                                className="input-field"
-                                required
-                            />
-                        </div>
-                        <button className="submit-btn" type="submit">Register</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
 
         </>
